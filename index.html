@@ -6,39 +6,49 @@
   	<meta name="keywords" content="one, two, three">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Michelle Burton Digital Portfolio</title>
+		<title>Michelle Burton's Digital Portfolio</title>
 
-		<!-- external CSS link -->
+        <!-- Favicon link -->
+        <link rel="icon" href="michelleburton.ico" type="image/x-icon">
+		
+        <!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+        <!-- Font Awesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	</head>
 	<body>
-         <!-- Header Section -->
-        <header>
-            <nav class="navbar">
-                <div class="logo">Michelle Burton Portfolio</div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Header Section -->
+    <div id="header-include"></div>
 
-            <div class="hero">
+        <div class="hero">
                 <div class="hero-content">
                     <h1>Unique Designs, Ready for You</h1>
                     <p>Discover high-quality, creative designs for your projects.</p>
                     <a href="portfolio.html" class="cta-button">Browse Designs</a>
                 </div>
-            </div>
-        </header>
+        </div>
+    <!-- Footer Section -->
+    <div id="footer-include"></div>
 
-    <footer>
-        <p>&copy; 2025 Michelle Burton</p>
-    </footer>
+	<script type="text/javascript" src="js/main.js"></script>
+    <script>
+        // JavaScript to include the header.html and footer.html content
+        function includeHTML() {
+            fetch('includes/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-include').innerHTML = data;
+                });
 
+            fetch('includes/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-include').innerHTML = data;
+                });
+        }
 
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+        includeHTML();
+    </script>
+    </body>
 </html>

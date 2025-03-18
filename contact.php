@@ -7,6 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<title>Contact Michelle Burton</title>
+        <!-- Favicon link -->
+        <link rel="icon" href="michelleburton.ico" type="image/x-icon">
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">

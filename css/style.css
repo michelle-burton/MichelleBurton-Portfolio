@@ -62,7 +62,7 @@
 /* Hero Section */
 .hero {
     height: 90vh;
-    background: url('https://source.unsplash.com/1600x900/?design,art') no-repeat center center/cover;
+    background: url('/img/Background-1600.png') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,6 +142,13 @@ h2 {
     background-color: #ff6b6b;
 }
 
+.featured-designs {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+    padding: 60px 0;
+}
+
 /* Design Grid */
 .design-grid {
     display: grid;
@@ -196,6 +203,7 @@ h2 {
     max-width: 900px;
     margin: auto;
     text-align: left;
+    padding: 60px 0;
 }
 
 /* Container for Layout */
@@ -282,6 +290,7 @@ body {
     max-width: 600px;
     margin: auto;
     text-align: center;
+    padding: 60px 0;
 }
 
 .contact-section h2 {
@@ -356,7 +365,44 @@ body {
     opacity: 0.8;
 }
 
-
+/* Footer styles */
 footer {
+    background-color: #333;
+    color: #fff;
     padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.cta {
+    margin-top: 20px;
+    font-weight: bold;
 }
