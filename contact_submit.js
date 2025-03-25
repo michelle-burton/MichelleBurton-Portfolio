@@ -6,64 +6,47 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         console.log("Form submission initiated ")
 
-        //  if (!checkInputs()) {
-        //     return; // Stop form submission if inputs are not valid
-        // }
 
+        const status = document.getElementById("my-form-status");
         const fullName = document.getElementById("fullName").value;
         const email = document.getElementById("email").value;
         const message = document.getElementById("message").value;
         const bodyMessage = `Name: ${fullName}<br> Email: ${email} <br> Message: ${message}`;
 
         console.log(bodyMessage);
+        fetch(e.target.action, {
+            method: form.method,
+            body: bodyMessage,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                status.innerHTML = "Thanks for your submission!";
+                console.log("sent");
+                form.reset()
+            } else {
+                console.log("messedup")
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                        status.innerHTML = "Oops! There was a problem submitting your form"
+                    }
+                })
+            }
+        }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+    }
 
         
-        //https://smtpjs.com/
-        Email.send({
-            Host: "s1.maildns.net ",
-            Username: "Add User",
-            Password: "Add Key",
-            To: 'msmichelleburton@yahoo.com',
-            From: "msmichelleburton@yahoo.com",
-            Subject: "Cyan Dream Creations 02",
-            Body: bodyMessage
-        }).then(
-            message => {
-                if (message == "OK") {
-                    Swal.fire({
-                        title: "Success!",
-                        text: "Message Sent Successfully!",
-                        icon: "success"
-                    });
-                } else {
-                    Swal.fire({
-                        title: "Error!",
-                        text: "Message Failed to Send!",
-                        icon: "error"
-                    })
-                }
-            }
-        );
+
+
     });
 
 
-    // sendEmail();
-    function checkInputs() {
-        const items = document.querySelectorAll('.item')
-        let allValid = true;
 
-        for (const item of items) {
-            if (item.value === "") {
-                item.classList.add("error");
-                item.parentElement.classList.add("error");
-                allValid = false;
-            } else {
-                item.classList.remove("error");
-                item.parentElement.classList.remove("error");
-            }
-        }
-          return allValid;
-    }
 })
     
 
