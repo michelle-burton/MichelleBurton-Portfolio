@@ -37,6 +37,12 @@
     background-color: #1e1e1e;
 }
 
+.gradient {
+    background: linear-gradient(90deg, #f22ae1, #2cb2fa);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
