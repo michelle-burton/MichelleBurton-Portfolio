@@ -20,22 +20,29 @@
     <!-- Header Section -->
     <div id="header-include"></div>
 
-          <!-- Contact & Support Section -->
+    <!-- Contact & Support Section -->
     <section class="contact-section">
         <h2>Contact & Support</h2>
         <p>Have questions or want to collaborate? Send me a message!</p>
 
         <!-- Contact Form -->
-        <form class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+         <form class="contact-form" id="contactForm" action="#">
+        
+            <div class="input field">
+                <input type="text" name="fullName" id="fullName" class="item" placeholder="Your Name" required autocomplete="off">
+            </div>
+            <div class="input field">
+                <input type="email" name="email" id="email" class="item" placeholder="Your Email" required autocomplete="off">
+            </div>
+                <textarea name="message" id="message" class="item" placeholder="Your Message" rows="4" required autocomplete="off"></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
  <!-- Footer Section -->
     <div id="footer-include"></div>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript" src="contact_submit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script type="text/javascript" src="js/main.js"></script>
     <script>
         // JavaScript to include the header.html and footer.html content
@@ -55,8 +62,6 @@
 
         includeHTML();
     </script>
+
 	</body>
 </html>
-
-
-<!-- // comment system: https://www.g2.com/categories/commenting-systems -->
