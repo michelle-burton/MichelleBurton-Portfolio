@@ -14,7 +14,7 @@ Clean, modern user interface that emphasizes portfolio content
 
 + HTML5 for structure and semantics
 + CSS3 for styling and animations
-+ PHP for server-side functionality including:
+
 
 ## Contact form processing
 + Dynamic project content loading
