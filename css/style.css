@@ -20,7 +20,10 @@
 	clear: both;
 }
 
-
+/* Colors*/
+ .success {
+    color: #63E6BE;
+ }
 
 /******************************************
 /* ADDITIONAL STYLES
