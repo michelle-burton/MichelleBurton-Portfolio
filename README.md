@@ -1,4 +1,4 @@
-# Michelle Burton's Portfolio
+# Michelle-Burton.com
 A responsive portfolio site built with HTML5, CSS3. Features include a dynamic project gallery, contact form with server-side validation, and content management system. Uses modern CSS Grid/Flexbox for layouts, custom animations, and PHP for handling form submissions and dynamically loading project content.
 
 
@@ -7,7 +7,7 @@ A responsive portfolio site built with HTML5, CSS3. Features include a dynamic p
 Responsive design that works across desktop and mobile devices
 Project gallery with detailed case studies
 About section with professional background and skills
-Contact form with PHP backend for email submissions
+Contact form for email submissions
 Clean, modern user interface that emphasizes portfolio content
 
 ## Technology Stack
