@@ -15,6 +15,7 @@
         <!-- Font Awesome link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/ada-form-styles.css">
     </head>
 	<body>
     <!-- Header Section -->
@@ -22,25 +23,75 @@
 
     <!-- Contact & Support Section -->
     <section class="contact-section">
-        <h2>Contact & Support</h2>
-        <p>Have questions or want to collaborate? Send me a message!</p>
 
         <!-- Contact Form -->
-         <form class="contact-form" id="contactForm" action="https://formsubmit.co/msmichelleburton@yahoo.com" method="POST">
-        
-            <div class="input field">
-                <input type="text" name="fullName" id="fullName" class="item" placeholder="Your Name" required autocomplete="off">
-            </div>
-            <div class="input field">
-                <input type="email" name="email" id="email" class="item" placeholder="Your Email" required autocomplete="off">
-            </div>
-            <textarea name="message" id="message" class="item" placeholder="Your Message" rows="4" required autocomplete="off"></textarea>
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_next" value="https://www.michelle-burton.com/thankyou.html">
-            <button type="submit">Send Message</button>
-        </form>
+<form class="contact-form" id="contactForm"
+      action="https://formsubmit.co/msmichelleburton@yahoo.com"
+      method="POST" novalidate>
+  <h2 id="contactHeading">Contact Michelle</h2>
+
+  <p>Have questions or want to collaborate? Send me a message!</p>
+  <p id="formHelp">All fields are required.</p>
+
+  <div class="form-group">
+    <label for="fullName">Full name <span aria-hidden="true">*</span></label>
+    <input
+      type="text"
+      id="fullName"
+      name="fullName"
+      required
+      autocomplete="name"
+      inputmode="text"
+      spellcheck="false"
+      aria-describedby="fullNameHint fullNameError"
+    />
+    <p id="fullNameHint" class="hint">Enter your first and last name.</p>
+    <p id="fullNameError" class="error" role="alert" aria-live="polite"></p>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email <span aria-hidden="true">*</span></label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+      autocomplete="email"
+      inputmode="email"
+      autocapitalize="off"
+      spellcheck="false"
+      aria-describedby="emailHint emailError"
+    />
+    <p id="emailHint" class="hint">We’ll only use this to reply.</p>
+    <p id="emailError" class="error" role="alert" aria-live="polite"></p>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message <span aria-hidden="true">*</span></label>
+    <textarea
+      id="message"
+      name="message"
+      required
+      rows="6"
+      aria-describedby="messageHint messageError"
+    ></textarea>
+    <p id="messageHint" class="hint">Tell me how I can help.</p>
+    <p id="messageError" class="error" role="alert" aria-live="polite"></p>
+  </div>
+
+  <!-- Honeypot: hidden from users AND assistive tech -->
+  <div class="hp" aria-hidden="true">
+    <label for="_honey">Leave this field empty</label>
+    <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off" />
+  </div>
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_next" value="https://www.michelle-burton.com/thankyou.html" />
+
+  <button type="submit">Send Message</button>
+
+  <!-- Global error region for non-field specific issues -->
+  <div id="formGlobalError" class="error" role="alert" aria-live="polite"></div>
+</form>
 
     </section>
  <!-- Footer Section -->
@@ -66,6 +117,50 @@
 
         includeHTML();
     </script>
+<script>
+  (function () {
+    const form = document.getElementById('contactForm');
+    const fields = [
+      { id: 'fullName', errorId: 'fullNameError', msg: 'Please enter your full name.' },
+      { id: 'email',    errorId: 'emailError',    msg: 'Please enter a valid email address.' },
+      { id: 'message',  errorId: 'messageError',  msg: 'Please enter a message.' }
+    ];
+
+    function validateField(input, cfg) {
+      const errorEl = document.getElementById(cfg.errorId);
+      if (input.validity.valid) {
+        input.setAttribute('aria-invalid', 'false');
+        errorEl.textContent = '';
+      } else {
+        input.setAttribute('aria-invalid', 'true');
+        errorEl.textContent = cfg.msg;
+      }
+    }
+
+    fields.forEach(cfg => {
+      const el = document.getElementById(cfg.id);
+      el.addEventListener('blur', () => validateField(el, cfg));
+      el.addEventListener('input', () => validateField(el, cfg));
+    });
+
+    form.addEventListener('submit', (e) => {
+      let firstInvalid = null;
+      fields.forEach(cfg => {
+        const el = document.getElementById(cfg.id);
+        validateField(el, cfg);
+        if (!el.validity.valid && !firstInvalid) firstInvalid = el;
+      });
+      if (firstInvalid) {
+        e.preventDefault();
+        document.getElementById('formGlobalError').textContent =
+          'Please correct the highlighted fields and try again.';
+        firstInvalid.focus();
+      } else {
+        document.getElementById('formGlobalError').textContent = '';
+      }
+    });
+  })();
+</script>
 
 	</body>
 </html>
