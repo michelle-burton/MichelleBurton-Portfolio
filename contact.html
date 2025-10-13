@@ -1,3 +1,22 @@
+<!--
+  ACCESSIBILITY FEATURES:
+  - Semantic HTML5 form structure (form, label, input, textarea, button)
+  - Proper <label> associations using for/id pairs
+  - Descriptive form heading and helper text with unique IDs
+  - Required fields marked both visually and programmatically (required + *)
+  - ARIA attributes (aria-describedby, aria-invalid, aria-live) for screen reader context
+  - Real-time inline error messages announced via aria-live="polite"
+  - Accessible focus management on validation errors
+  - Keyboard navigation and logical tab order
+  - Visible focus indicators (:focus-visible) with sufficient contrast
+  - WCAG 2.1 AA-compliant color contrast on text and borders
+  - Accessible honeypot (aria-hidden, tabindex="-1") for spam prevention
+  - Autocomplete attributes (name, email) to support assistive technology and autofill
+  - Responsive layout using rem units for scalable spacing
+  - No placeholder-only labeling (preserves field context for screen readers)
+  - Error summaries provided in a role="alert" region for global feedback
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -24,74 +43,74 @@
     <!-- Contact & Support Section -->
     <section class="contact-section">
 
-        <!-- Contact Form -->
-<form class="contact-form" id="contactForm"
+    <!-- Contact Form -->
+    <form class="contact-form" id="contactForm"
       action="https://formsubmit.co/msmichelleburton@yahoo.com"
       method="POST" novalidate>
-  <h2 id="contactHeading">Contact Michelle</h2>
+        <h2 id="contactHeading">Contact Michelle</h2>
 
-  <p>Have questions or want to collaborate? Send me a message!</p>
-  <p id="formHelp">All fields are required.</p>
+        <p>Have questions or want to collaborate? Send me a message!</p>
+        <p id="formHelp">All fields are required.</p>
 
-  <div class="form-group">
-    <label for="fullName">Full name <span aria-hidden="true">*</span></label>
-    <input
-      type="text"
-      id="fullName"
-      name="fullName"
-      required
-      autocomplete="name"
-      inputmode="text"
-      spellcheck="false"
-      aria-describedby="fullNameHint fullNameError"
-    />
-    <p id="fullNameHint" class="hint">Enter your first and last name.</p>
-    <p id="fullNameError" class="error" role="alert" aria-live="polite"></p>
-  </div>
+        <div class="form-group">
+            <label for="fullName">Full name <span aria-hidden="true">*</span></label>
+            <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                required
+                autocomplete="name"
+                inputmode="text"
+                spellcheck="false"
+                aria-describedby="fullNameHint fullNameError"
+            />
+            <p id="fullNameHint" class="hint">Enter your first and last name.</p>
+            <p id="fullNameError" class="error" role="alert" aria-live="polite"></p>
+        </div>
 
-  <div class="form-group">
-    <label for="email">Email <span aria-hidden="true">*</span></label>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      required
-      autocomplete="email"
-      inputmode="email"
-      autocapitalize="off"
-      spellcheck="false"
-      aria-describedby="emailHint emailError"
-    />
-    <p id="emailHint" class="hint">We’ll only use this to reply.</p>
-    <p id="emailError" class="error" role="alert" aria-live="polite"></p>
-  </div>
+        <div class="form-group">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+                inputmode="email"
+                autocapitalize="off"
+                spellcheck="false"
+                aria-describedby="emailHint emailError"
+            />
+            <p id="emailHint" class="hint">We’ll only use this to reply.</p>
+            <p id="emailError" class="error" role="alert" aria-live="polite"></p>
+        </div>
 
-  <div class="form-group">
-    <label for="message">Message <span aria-hidden="true">*</span></label>
-    <textarea
-      id="message"
-      name="message"
-      required
-      rows="6"
-      aria-describedby="messageHint messageError"
-    ></textarea>
-    <p id="messageHint" class="hint">Tell me how I can help.</p>
-    <p id="messageError" class="error" role="alert" aria-live="polite"></p>
-  </div>
+        <div class="form-group">
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea
+                id="message"
+                name="message"
+                required
+                rows="6"
+                aria-describedby="messageHint messageError"
+            ></textarea>
+            <p id="messageHint" class="hint">Tell me how I can help.</p>
+            <p id="messageError" class="error" role="alert" aria-live="polite"></p>
+        </div>
 
-  <!-- Honeypot: hidden from users AND assistive tech -->
-  <div class="hp" aria-hidden="true">
-    <label for="_honey">Leave this field empty</label>
-    <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off" />
-  </div>
-  <input type="hidden" name="_captcha" value="false" />
-  <input type="hidden" name="_next" value="https://www.michelle-burton.com/thankyou.html" />
+        <!-- Honeypot: hidden from users AND assistive tech -->
+        <div class="hp" aria-hidden="true">
+            <label for="_honey">Leave this field empty</label>
+            <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off" />
+        </div>
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://www.michelle-burton.com/thankyou.html" />
 
-  <button type="submit">Send Message</button>
+        <button type="submit">Send Message</button>
 
-  <!-- Global error region for non-field specific issues -->
-  <div id="formGlobalError" class="error" role="alert" aria-live="polite"></div>
-</form>
+        <!-- Global error region for non-field specific issues -->
+        <div id="formGlobalError" class="error" role="alert" aria-live="polite"></div>
+    </form>
 
     </section>
  <!-- Footer Section -->
@@ -126,28 +145,30 @@
       { id: 'message',  errorId: 'messageError',  msg: 'Please enter a message.' }
     ];
 
-    function validateField(input, cfg) {
-      const errorEl = document.getElementById(cfg.errorId);
+    // Using HTML 5 validity object
+    function validateField(input, fieldsObj) {
+      const errorEl = document.getElementById(fieldsObj.errorId);
       if (input.validity.valid) {
         input.setAttribute('aria-invalid', 'false');
         errorEl.textContent = '';
-      } else {
+      } else {        
+        // Updates input for screenreader: the field failed validation.
         input.setAttribute('aria-invalid', 'true');
-        errorEl.textContent = cfg.msg;
+        errorEl.textContent = fieldsObj.msg;
       }
     }
 
-    fields.forEach(cfg => {
-      const el = document.getElementById(cfg.id);
-      el.addEventListener('blur', () => validateField(el, cfg));
-      el.addEventListener('input', () => validateField(el, cfg));
+    fields.forEach(fieldsObj => {
+      const el = document.getElementById(fieldsObj.id);
+      el.addEventListener('blur', () => validateField(el, fieldsObj));
+      el.addEventListener('input', () => validateField(el, fieldsObj));
     });
 
     form.addEventListener('submit', (e) => {
       let firstInvalid = null;
-      fields.forEach(cfg => {
-        const el = document.getElementById(cfg.id);
-        validateField(el, cfg);
+      fields.forEach(fieldsObj => {
+        const el = document.getElementById(fieldsObj.id);
+        validateField(el, fieldsObj);
         if (!el.validity.valid && !firstInvalid) firstInvalid = el;
       });
       if (firstInvalid) {
