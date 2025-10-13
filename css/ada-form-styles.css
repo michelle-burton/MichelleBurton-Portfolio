@@ -1,8 +1,17 @@
 ada-form-styles.css
+
+
+/* 
+base font size 16px:
+1rem = 16px
+0.25rem = 4px
+*/
+
+
 .contact-form {
   max-width: 640px;
 }
-.form-group { margin-block: 1rem; }
+
 label { display: inline-block; font-weight: 600; margin-bottom: 0.25rem; }
 .hint { margin: 0.25rem 0 0; font-size: 0.9rem; color: #555; }
 .contact-section .error { margin: 0.25rem 0 0; font-size: 0.95rem; color: #b00020; }
@@ -22,13 +31,19 @@ button {
   font-weight: 600;
 }
 .hp {
-  /* Visually hide but keep in DOM for bots; also aria-hidden + tabindex -1 */
+  /* Honeypot: Visually hide but keep in DOM for bots; also aria-hidden + tabindex -1 */
   position: absolute !important;
   height: 1px; width: 1px;
   overflow: hidden; clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap; border: 0; padding: 0; margin: 0;
 }
 
-.form-group {    
+.form-group {   
+    margin-top: .5rem; 
     text-align: left;
+}
+
+.contact-section p.hint {
+    font-size: .7rem;
+    margin-bottom: 0;
 }
