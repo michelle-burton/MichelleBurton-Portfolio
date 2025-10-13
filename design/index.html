@@ -31,6 +31,7 @@
   <div id="Title">
     <h1>Design Page</h1>
     <p id="display"></p>
+
   </div>
   
 
@@ -38,11 +39,21 @@
   <script src="scripts.js"></script>
   <script>
     const id = new URL(window.location.href).searchParams.get("id");
-          const displayElement = document.getElementById("display");
+    const displayElement = document.getElementById("display");
       if (id) {
-        displayElement.textContent = `ID: ${id}`;
+        console.log(`Image ID: ${id}`);
+        displayElement.innerHTML = `   
+        <img    
+            src="../img/Thumb_0${id}.png"
+            alt="Designs for ID ${id}"
+            width="400"
+            height="400"
+            loading="lazy"
+            decoding="async"
+            />
+    `
       } else {
-        displayElement.textContent = "No ID found in the URL.";
+        displayElement.textContent = "No Design found.";
       }
   </script>
 </body>
