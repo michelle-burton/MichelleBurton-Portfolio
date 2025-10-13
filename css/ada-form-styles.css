@@ -47,3 +47,7 @@ button {
     font-size: .7rem;
     margin-bottom: 0;
 }
+
+.btn-submit {
+    margin-top: 4rem;
+}
