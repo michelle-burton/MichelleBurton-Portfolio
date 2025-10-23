@@ -2,6 +2,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll(".filter-btn");
     const designItems = document.querySelectorAll(".design-item");
+    const links = document.querySelectorAll(".navbar .nav-link");
+
+    console.log(links)
 
     filterButtons.forEach(button => {
         button.addEventListener("click", () => {
