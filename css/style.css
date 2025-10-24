@@ -401,6 +401,7 @@ footer {
 
 .footer-content p {
     margin: 10px 0;
+    font-size: .75rem;
 }
 
 .footer-content a {
@@ -414,7 +415,7 @@ footer {
 }
 
 .social-media {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .social-media a {
@@ -471,3 +472,5 @@ footer {
   left: 0; right: 0; bottom: -4px;
   height: 2px; border-radius: 2px; background: #f15bb5;
 }
+
+
