@@ -391,6 +391,7 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    border-top: 1px #E0E0E0 solid;
 }
 
 .footer-content {
