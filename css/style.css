@@ -70,7 +70,7 @@
 
 /* Hero Section */
 .hero {
-    height: 90vh;
+    height: 70vh;
     background: url('/img/Background-1600.png') no-repeat center center/cover;
     display: flex;
     align-items: center;
