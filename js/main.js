@@ -36,13 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Extract the href filename from the link
         const linkPage = link.getAttribute("href").split("/").pop();
-
-        // Add 'active' if it matches the current page
         if (linkPage === currentPage) {
         link.classList.add("active");
         }
     });
-
   }, 300); // wait 0.3 seconds
 });
 
