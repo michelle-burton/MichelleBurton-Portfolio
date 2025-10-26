@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-  }, 100); // wait 0.3 seconds
+  }, 300); // wait 0.3 seconds
 });
 
 
