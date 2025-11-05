@@ -152,7 +152,7 @@ h2 {
 }
 
 .featured-designs {
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
     text-align: left;
     padding: 60px 0;
@@ -173,6 +173,7 @@ h2 {
     overflow: hidden;
     border-radius: 10px;
     cursor: pointer;
+    margin: 10px;
 }
 
 .design-item img {
