@@ -12,8 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
             designItems.forEach(item => {
                 if (category === "all" || item.getAttribute("data-category") === category) {
+                    const parentElement = item.parentElement;
+                    if (parentElement) { // Check if a parent element exists
+                        parentElement.style.display = "block"; // Set the display style
+                    }
                     item.style.display = "block";
                 } else {
+                    const parentElement = item.parentElement;
+                    if (parentElement) { // Check if a parent element exists
+                        parentElement.style.display = "none"; // Set the display style
+                    }
                     item.style.display = "none";
                 }
             });
