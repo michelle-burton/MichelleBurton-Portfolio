@@ -107,8 +107,19 @@
 }
 
 .navbar-brand {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
+@media (max-width: 560px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}
+
+/* @media (min-width: 760px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+} */
 
 
 
