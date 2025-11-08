@@ -263,9 +263,6 @@ h2 {
     opacity: 1;
 }
 
-
-
-
 /* About the Designer Section */
 .about-designer {
     max-width: 900px;
@@ -490,6 +487,15 @@ footer {
   background: linear-gradient(90deg, #9b5de5, #f15bb5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+h2.portfolio {
+    font-size: 2rem;
+}
+ @media (max-width: 520px) {
+    h2.portfolio {
+        font-size: 1.5rem;
+  }
 }
 
 
