@@ -15,7 +15,7 @@ base font size 16px:
 label { display: inline-block; font-weight: 600; margin-bottom: 0.25rem; }
 .hint { margin: 0.25rem 0 0; font-size: 0.9rem; color: #555; }
 .contact-section .error { margin: 0.25rem 0 0; font-size: 0.95rem; color: #b00020; }
-input, textarea, button {
+input, textarea, .btn-submit {
   width: 100%;
   padding: 0.75rem;
   font: inherit;
