@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
-import './App.css'
+
+import './css/normalize.css'
+import './css/style.css'
 
 function App() {
 
