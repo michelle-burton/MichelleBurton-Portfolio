@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Header from './Header.jsx'
+import Footer from './Footer.jsx'
 import './App.css'
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
                     <p>I bridge aesthetics and technology to deliver intuitive, high-performing web experiences.</p>
                     <a href="portfolio.html" class="cta-button">Discover More</a>
                 </div>
-        </div>
+          </div>
+          <Footer />
     </>
   )
 }
