@@ -1,10 +1,12 @@
 import { useState } from 'react'
+import Header from './Header.jsx'
 import './App.css'
 
 function App() {
 
   return (
-    <>
+      <>
+        <Header />
         <div class="hero">
                 <div class="hero-content">
                     <h1>Where Design Meets Function</h1>
