@@ -1,0 +1,19 @@
+/* 1. Load Bootstrap functions first */
+@import "bootstrap/scss/functions";
+
+/* 2. Load your custom overrides (variables BEFORE Bootstrap’s variables) */
+
+
+/* 3. Load Bootstrap’s core variable system */
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+/* 4. Load maps and mixins — required before components */
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+
+/* 5. Load utilities */
+@import "bootstrap/scss/utilities";
+
+/* 6. Load the full Bootstrap framework */
+@import "bootstrap";
