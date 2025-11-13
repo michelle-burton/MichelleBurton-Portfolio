@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 // import './css/normalize.css'
 import './styles/main.scss';
-import './css/style.css'
+import './css/style.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

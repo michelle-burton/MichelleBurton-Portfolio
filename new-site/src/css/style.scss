@@ -1,3 +1,5 @@
+@import "../styles/custom"; 
+
 /* Box Model Hack */
 * {
     margin: 0;
@@ -501,7 +503,7 @@ h2.portfolio {
 
 
 .hero-content h1{
-    color: red;
+    color: $my-custom-background;
 }
 
 
