@@ -2,7 +2,7 @@
 @import "bootstrap/scss/functions";
 
 /* 2. Load your custom overrides (variables BEFORE Bootstrap’s variables) */
-@import "./custom.scss";
+@import "./custom";
 
 /* 3. Load Bootstrap’s core variable system */
 @import "bootstrap/scss/variables";
@@ -19,3 +19,4 @@
 @import "bootstrap";
 
 @import "./styles";
+@import "./form";
