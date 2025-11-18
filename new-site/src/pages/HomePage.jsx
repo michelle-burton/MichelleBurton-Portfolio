@@ -3,11 +3,11 @@
 // Homepage
 function HomePage() {
     return (
-        <div class="hero">
-            <div class="hero-content">
+        <div className="hero">
+            <div className="hero-content">
                 <h1>Where Design Meets Function</h1>
                 <p>I bridge aesthetics and technology to deliver intuitive, high-performing web experiences.</p>
-                <a href="portfolio.html" class="cta-button">Discover More</a>
+                <a href="portfolio.html" className="cta-button">Discover More</a>
             </div>
         </div>
     )
