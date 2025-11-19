@@ -3,7 +3,7 @@ export default function Footer() {
       <footer className="text-center py-4 border-top">
         <div class="footer-content">
             <p><em>Designing modern, responsive, human-centered interfaces.</em> &copy; {new Date().getFullYear()} Michelle Burton</p>
-            <p>Email: <a href="mailto:msmichelleburton@yahoo.com">Michelle Burton</a> | Phone: (414) 388-5642</p>
+            <p>Email: <a href="mailto:msmichelleburton@yahoo.com">Michelle Burton</a> |  &nbsp; &nbsp;Phone: (414) 388-5642</p>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/msmichelleburton/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/michelle-burton" target="_blank"><i class="fab fa-github"></i></a>
