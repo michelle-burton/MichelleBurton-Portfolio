@@ -1,7 +1,7 @@
 
 
 // Homepage
-function HomePage() {
+function Home() {
     return (
         <div className="hero">
             <div className="hero-content">
@@ -13,5 +13,5 @@ function HomePage() {
     )
 }
 
-export default HomePage;
+export default Home;
 

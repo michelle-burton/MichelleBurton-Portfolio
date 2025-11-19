@@ -4,7 +4,7 @@ export default function Header() {
         <header>
             <nav className="navbar navbar-expand-md navbar-dark bg-dark border-bottom sticky-top">
                 <div className="container">
-                <a className="navbar-brand fw-semibold gradient" href="/index.html">
+                <a className="navbar-brand fw-semibold gradient" href="/">
                     Michelle&nbsp;Burton<span className="text-light">'s&nbsp;Portfolio</span>
                 </a>
 
@@ -15,7 +15,7 @@ export default function Header() {
 
                 <div className="collapse navbar-collapse justify-content-end" id="mainNav">
                     <ul className="navbar-nav">
-                    <li className="nav-item"><a className="nav-link" href="/homepage">Home</a></li>
+                    <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
                     <li className="nav-item"><a className="nav-link" href="/portfolio.html">Portfolio</a></li>
                     <li className="nav-item"><a className="nav-link" href="/about">About</a></li>
                     <li className="nav-item"><a className="nav-link" href="/contact.html">Contact</a></li>
