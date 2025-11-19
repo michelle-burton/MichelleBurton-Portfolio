@@ -5,7 +5,7 @@ function About() {
             <section className="about-designer">
                 <div className="container">
                     <div className="designer-photo">
-                        <img src="img/MichelleBurton.jpeg" alt="Designer Photo: Michelle Burton"/>
+                        <img src="images/MichelleBurton.jpeg" alt="Designer Photo: Michelle Burton"/>
                     </div>
                     <div className="designer-info">
                         <h2>About Me</h2>

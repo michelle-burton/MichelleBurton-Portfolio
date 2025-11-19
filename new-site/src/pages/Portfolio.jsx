@@ -1,8 +1,8 @@
 function Portfolio() {
     return (
-        <div>
+        <main className="page-container">
             <h1>Portfolio</h1>
-        </div>
+        </main>
     )
 }
 
