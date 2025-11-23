@@ -18,7 +18,7 @@ function About() {
                             <li>📱 User-focused, modern aesthetics</li>
                             <li>🔧 Precision in every pixel</li>
                         </ul>
-                        <a href="portfolio.html" className="cta-button">View My Work</a> 
+                        <a href="/portfolio" className="cta-button">View My Work</a> 
                     </div>
                 </div>
             </section>
