@@ -10,7 +10,7 @@ export default function Footer() {
                 <a href="https://dribbble.com/mcburton" target="_blank"><i class="fab fa-dribbble"></i></a>
                 <a href="https://www.figma.com/@michelleburton" target="_blank"><i class="fab fa-figma"></i></a>
             </div>
-            <p class="cta"> <a href="/contact.html">Let's connect!</a></p>
+            <p class="cta"> <a href="/contact">Let's connect!</a></p>
         </div>
     </footer>
   );
