@@ -24,13 +24,13 @@ function Portfolio() {
           
                 <div class="col">
                     <div class="card design-item" data-category="ui-kits">
-                    <a href="design/index.html?id=5"><img src="/img/Thumb_05.png" class="img-fluid" alt="UI Kit"/></a>
+                    <a href="design/index.html?id=5"><img src="images/Thumb_05.png" class="img-fluid" alt="UI Kit"/></a>
                     <div class="overlay"><a href="design/index.html?id=5">View Design</a></div>
                     </div>
                 </div>
                 <div class="col">
                 <div class="card design-item" data-category="code">
-                    <a href="https://puppy-palace-react-app.onrender.com/" target="_blank"><img src="/img/Thumb_10.png" alt="Puppy Palace"/></a>
+                    <a href="https://puppy-palace-react-app.onrender.com/" target="_blank"><img src="images/Thumb_10.png" alt="Puppy Palace"/></a>
                     <div class="overlay"><a href="https://puppy-palace-react-app.onrender.com/" target="_blank">View Design</a></div>
                     </div>
                 </div>
