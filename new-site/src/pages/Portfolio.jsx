@@ -17,7 +17,7 @@ function Portfolio() {
                 </div>
                 <div class="col">
                     <div class="card design-item" data-category="illustrations">
-                       <a href="design/index.html?id=1"><img src="/img/Thumb_01.png" class="img-fluid" alt="Illustration"/></a>
+                       <a href="design/index.html?id=1"><img src="images/Thumb_01.png" class="img-fluid" alt="Illustration"/></a>
                         <div class="overlay"><a href="design/index.html?id=1">View Design</a></div>
                     </div>
                 </div>
