@@ -36,6 +36,8 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                 />
+                <label htmlFor="message">Message</label>
+                <textarea></textarea>
             </form>
         </main>
     )
