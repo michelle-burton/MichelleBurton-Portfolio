@@ -37,7 +37,14 @@ export default function Contact() {
                     required
                 />
                 <label htmlFor="message">Message</label>
-                <textarea></textarea>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                ></textarea>
             </form>
         </main>
     )
