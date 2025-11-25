@@ -28,6 +28,14 @@ export default function Contact() {
                 />
 
                 <label htmlFor="email">Email</label>
+                <input 
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                />
             </form>
         </main>
     )
