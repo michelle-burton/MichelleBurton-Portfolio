@@ -11,7 +11,29 @@ export default function Contact() {
 
     const [status, setStatus] = useState("");
 
-    function handleChange(e) { }
+function handleChange(e) {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    // simple client-side validation
+    if (!formData.name || !formData.email || !formData.message) {
+      setStatus("Please fill out all fields.");
+      return;
+    }
+
+    // TODO: later: send form data to backend or email service
+    console.log("Form Submitted:", formData);
+    setStatus("Message sent! (Demo mode)");
+    setFormData({ name: "", email: "", message: "" });
+  }
+
 
     return (
         <main className="contact-container">
@@ -45,6 +67,8 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                 ></textarea>
+                <button type="submit">Send Message</button>
+                {status && <p className="status">{status}</p>}
             </form>
         </main>
     )
