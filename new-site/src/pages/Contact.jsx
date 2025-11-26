@@ -39,7 +39,10 @@ function handleChange(e) {
         <main className="contact-container">
             <h1>Contact me</h1>
 
-            <form onSubmit={handleSubmit} className="contact-form">
+            <form
+                action="https://formsubmit.co/msmichelleburton@yahoo.com"
+                method="POST"
+                className="contact-form">
                 <label htmlFor="name">Name</label>
                 <input
                     id="name"
