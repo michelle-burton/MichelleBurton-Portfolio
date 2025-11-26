@@ -43,6 +43,9 @@ function handleChange(e) {
                 action="https://formsubmit.co/msmichelleburton@yahoo.com"
                 method="POST"
                 className="contact-form">
+                <input type="hidden" name="_subject" value="Portfolio Contact Form" />
+                <input type="hidden" name="_captcha" value="false" />
+
                 <label htmlFor="name">Name</label>
                 <input
                     id="name"
