@@ -74,7 +74,12 @@ function handleChange(e) {
                     required
                 ></textarea>
                 <button type="submit">Send Message</button>
-                {status && <p className="status">{status}</p>}
+                {status && (
+                <p className={`status ${status.includes("sent") ? "success" : "error"}`}>
+                    {status}
+                </p>
+)}
+
             </form>
         </main>
     )
