@@ -28,3 +28,21 @@
     border-radius: 4px;
   }
 }
+
+.status {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+
+  &.success {
+    background: #e6ffe7;
+    color: #0a7d14;
+    border: 1px solid #0a7d14;
+  }
+
+  &.error {
+    background: #ffe6e6;
+    color: #b30000;
+    border: 1px solid #b30000;
+  }
+}
