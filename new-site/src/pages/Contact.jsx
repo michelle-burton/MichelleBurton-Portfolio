@@ -44,6 +44,12 @@ function handleChange(e) {
                 method="POST"
                 className="contact-form">
                 <input type="hidden" name="_subject" value="Portfolio Contact Form" />
+                 {/* redirect back to your site after submit */}
+                <input
+                    type="hidden"
+                    name="_next"
+                    value="https://www.michelle-burton.com/"
+                />
                 <input type="hidden" name="_captcha" value="false" />
 
                 <label htmlFor="name">Name</label>
