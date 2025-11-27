@@ -67,6 +67,7 @@ function handleChange(e) {
                     id="email"
                     name="email"
                     type="email"
+                    placeholder="you@example.com"
                     value={formData.email}
                     onChange={handleChange}
                     required
