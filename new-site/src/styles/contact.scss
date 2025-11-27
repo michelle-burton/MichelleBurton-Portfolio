@@ -46,3 +46,9 @@
     border: 1px solid #b30000;
   }
 }
+
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+    opacity: 1;
+}
