@@ -76,6 +76,7 @@ function handleChange(e) {
                 <textarea
                     id="message"
                     name="message"
+                    placeholder="Tell me how I can help you..."
                     rows="5"
                     value={formData.message}
                     onChange={handleChange}
