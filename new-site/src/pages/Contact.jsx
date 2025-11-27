@@ -59,6 +59,7 @@ function handleChange(e) {
                     type="text"
                     value={formData.name}
                     onChange={handleChange}
+                    placeholder="Your full name"
                 />
 
                 <label htmlFor="email">Email</label>
