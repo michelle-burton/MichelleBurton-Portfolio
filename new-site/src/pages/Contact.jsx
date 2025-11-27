@@ -53,33 +53,40 @@ function handleChange(e) {
                 <input type="hidden" name="_captcha" value="false" />
 
                 <div className="form-floating mb-3">
-                <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Your full name"
-                    />
-                     <label htmlFor="name">Name</label>
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        className="form-control"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Your full name"
+                        required
+                        />
+                        <label htmlFor="name">Name</label>
                     </div>
 
-                <label htmlFor="email">Email</label>
-                <input 
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="you@example.com"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                />
+                <div className="form-floating mb-3">
+                    <input 
+                        id="email"
+                        name="email"
+                        type="email"
+                        className="form-control"
+                        placeholder="you@example.com"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        />
+                    <label htmlFor="email">Email</label>
+                </div>
                 <label htmlFor="message">Message</label>
                 <textarea
                     id="message"
                     name="message"
                     placeholder="Tell me how I can help you..."
                     rows="5"
+                    className="form-control"
+                    style={{ height: "150px" }}
                     value={formData.message}
                     onChange={handleChange}
                     required
