@@ -52,7 +52,7 @@ function handleChange(e) {
                 />
                 <input type="hidden" name="_captcha" value="false" />
 
-                <label htmlFor="name">Name</label>
+                <div className="form-floating mb-3">
                 <input
                     id="name"
                     name="name"
@@ -60,7 +60,9 @@ function handleChange(e) {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Your full name"
-                />
+                    />
+                     <label htmlFor="name">Name</label>
+                    </div>
 
                 <label htmlFor="email">Email</label>
                 <input 
