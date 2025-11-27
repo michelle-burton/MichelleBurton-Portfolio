@@ -79,18 +79,21 @@ function handleChange(e) {
                         />
                     <label htmlFor="email">Email</label>
                 </div>
-                <label htmlFor="message">Message</label>
-                <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell me how I can help you..."
-                    rows="5"
-                    className="form-control"
-                    style={{ height: "150px" }}
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                ></textarea>
+
+                <div className="form-floating mb-3">
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Tell me how I can help you..."
+                        rows="5"
+                        className="form-control"
+                        style={{ height: "150px" }}
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                        ></textarea>
+                    <label htmlFor="message">Message</label>
+                </div>
                 <button type="submit">Send Message</button>
                 {status && (
                 <p className={`status ${status.includes("sent") ? "success" : "error"}`}>
