@@ -6,6 +6,10 @@
     font-family: Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Clear fix hack */
 .clearfix:after {
      content: ".";
