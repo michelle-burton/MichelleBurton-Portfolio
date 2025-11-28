@@ -94,7 +94,7 @@ function handleChange(e) {
                         ></textarea>
                     <label htmlFor="message">Message</label>
                 </div>
-                <button type="submit">Send Message</button>
+                <button type="submit" lassName="btn-primary">Send Message</button>
                 {status && (
                 <p className={`status ${status.includes("sent") ? "success" : "error"}`}>
                     {status}
