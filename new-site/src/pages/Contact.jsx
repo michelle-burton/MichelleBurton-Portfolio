@@ -37,7 +37,8 @@ function handleChange(e) {
 
     return (
         <main className="contact-container">
-            <h1>Contact me</h1>
+            <h1>Contact Michelle</h1>
+            <p>Have questions or want to collaborate? Send me a message!</p>
 
             <form
                 action="https://formsubmit.co/20cb355fa98a9b4571f25a9473538753 "
