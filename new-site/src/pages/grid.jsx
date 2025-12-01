@@ -35,27 +35,32 @@ export default function Grid() {
     const filteredProjects = activeFilter === "all" ? PROJECTS : PROJECTS.filter((project) => project.type === activeFilter);
 
     return (
-        <main>
-            <h1>Projects</h1>
-                <p>filter by type to see different kinds of work.</p>
-            <div>
-                {FILTERS.map((filter) => (
-                    <button
-                        key={filter}
-                        type="button"
-                        className={
-                            filter === activeFilter
-                                ? "filter-btn filter-btn--active"
-                                : "filter-btn"
-                        }
-                        onClick={() => setActiveFilter(filter)}
-                    >
-                        {filter === "all"
-                            ? "ALL"
-                            : filter.charAt(0).toUpperCase() + filter.slice(1)}
-                    </button>
-               ))}     
-            </div>
+    <main className="projects-page container">
+      <header className="projects-header">
+        <h1 className="projects-title">Projects</h1>
+        <p className="projects-subtitle">
+          Filter by type to see different kinds of work.
+        </p>
+
+        <div className="projects-filters">
+          {FILTERS.map((filter) => (
+            <button
+              key={filter}
+              type="button"
+              className={
+                filter === activeFilter
+                  ? "filter-btn filter-btn--active"
+                  : "filter-btn"
+              }
+              onClick={() => setActiveFilter(filter)}
+            >
+              {filter === "all"
+                ? "All"
+                : filter.charAt(0).toUpperCase() + filter.slice(1)}
+            </button>
+          ))}
+        </div>
+      </header>
         <section className="project-grid">
         {filteredProjects.map((project) => (
           <article key={project.id} className="project-card">
