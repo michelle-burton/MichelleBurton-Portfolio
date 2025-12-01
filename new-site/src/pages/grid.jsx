@@ -56,6 +56,23 @@ export default function Grid() {
                     </button>
                ))}     
             </div>
+            <section>
+                {filteredProjects.map((project) => (
+                    <article key={project.id} className="project-card">
+                        <div className="project-card-body">
+                        <h2 className="project-card-title">{project.title}</h2>
+                        <p className="project-card-type">
+                            {project.type === "code" ? "Code Project" : "Design Project"}
+                        </p>
+                        <p className="project-card-description">{project.description}</p>
+                        </div>
+                    </article>
+                ))}
+                {filteredProjects.length === 0 && (
+                    <p className="project-grid-empty">No projects match this filter.</p>
+                )}
+            </section>
+
         </main>
     )
 }
