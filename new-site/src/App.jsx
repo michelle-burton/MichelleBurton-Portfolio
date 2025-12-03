@@ -6,6 +6,7 @@ import About from './pages/About.jsx'
 import Contact from "./pages/Contact.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import Grid from "./pages/grid.jsx";
+import Projects from "./pages/Projects.jsx";
 
 
 
@@ -19,7 +20,8 @@ function App() {
                 <Route path="/about" element={<About />} /> 
                 <Route path="/portfolio" element={<Portfolio />} /> 
                 <Route path="/contact" element={<Contact />} /> 
-                <Route path="/projects" element={<Grid />} />
+                <Route path="/grid" element={<Grid />} />
+                <Route path="/projects" element={<Projects />} />
             </Routes>
             <Footer />
         </Router>
