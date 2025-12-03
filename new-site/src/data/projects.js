@@ -5,7 +5,7 @@ export const projects = [
     title: "Puppy Palace React App",
     type: "code", // "code" | "design" | "case-study" etc.
     description: "Adoptable pups browser with filters, favorites, and a playful UI.",
-    thumbnail: "/images/projects/puppy-palace-thumb.jpg",
+    thumbnail: "/images/Thumb_08.png",
     liveUrl: "https://your-live-url.com/puppy-palace",
     repoUrl: "https://github.com/michelleburton/puppy-palace",
   },
