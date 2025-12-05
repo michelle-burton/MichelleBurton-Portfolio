@@ -42,7 +42,7 @@ export const projects = [
     type: "code",
     description: "LLM-assisted dashboard to monitor stocks and dividend income.",
     thumbnail: "/images/Thumb_09.png",
-    liveUrl: "https://your-live-url.com/stock-dashboard",
+    liveUrl: "",
     repoUrl: "https://github.com/michelleburton/ai-stock-dashboard",
   },
   {
