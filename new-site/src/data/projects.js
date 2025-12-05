@@ -24,12 +24,12 @@ export const projects = [
     type: "design",
     description: "Figma e-commerce layout with hero, promo banner, and product grid.",
     thumbnail: "/images/Thumb_06.png",
-    liveUrl: "https://www.figma.com/file/...",
+    liveUrl: "",
     repoUrl: null,
     },
     {
     id: "AI-Art 01",
-    title: "AI Art",
+    title: "AI Art and Design",
     type: "design", // "code" | "design" | "case-study" etc.
     description: "A fun, open source React app where anyone can add their pup to a shared gallery 🐶✨",
     thumbnail: "/images/Thumb_01.png",
