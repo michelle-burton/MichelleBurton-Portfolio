@@ -33,8 +33,8 @@ export const projects = [
     type: "design", // "code" | "design" | "case-study" etc.
     description: "A fun, open source React app where anyone can add their pup to a shared gallery 🐶✨",
     thumbnail: "/images/Thumb_01.png",
-    liveUrl: "https://your-live-url.com/puppy-palace",
-    repoUrl: "https://github.com/michelleburton/puppy-palace",
+    liveUrl: null,
+    repoUrl: null,
   },
   {
     id: "stock-dashboard",
