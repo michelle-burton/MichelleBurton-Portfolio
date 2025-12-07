@@ -5,9 +5,9 @@ import { useState } from "react";
 export default function Projects() {
     const [filter, setFilter] = useState("all")
     
-//     const filtered = projects.filter(p =>
-//   filter === "all" ? true : p.type === filter
-// );
+    const filtered = projects.filter(p =>
+        filter === "all" ? true : p.type === filter
+    );
   return (
     <section className="projects-section container">
           <h1 className="projects-title">Projects</h1>
