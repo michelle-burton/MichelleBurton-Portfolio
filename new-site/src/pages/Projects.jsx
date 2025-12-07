@@ -2,9 +2,10 @@
 import { projects } from "../data/projects";
 
 export default function Projects() {
-    const filtered = projects.filter(p =>
-  filter === "all" ? true : p.type === filter
-);
+    
+//     const filtered = projects.filter(p =>
+//   filter === "all" ? true : p.type === filter
+// );
   return (
     <section className="projects-section container">
           <h1 className="projects-title">Projects</h1>
@@ -16,7 +17,7 @@ export default function Projects() {
           </div>
 
         <div className="projects-grid">
-                 {filtered.map(p => <ProjectCard key={p.id} data={p} />)}
+                 {/* {filtered.map(p => <ProjectCard key={p.id} data={p} />)} */}
         {projects.map((project) => (
           <article key={project.id} className="project-card">
             {/* Thumbnail */}
