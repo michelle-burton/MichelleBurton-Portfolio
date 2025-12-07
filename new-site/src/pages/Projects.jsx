@@ -4,7 +4,13 @@ import { projects } from "../data/projects";
 export default function Projects() {
   return (
     <section className="projects-section container">
-      <h1 className="projects-title">Projects</h1>
+          <h1 className="projects-title">Projects</h1>
+          <div>
+            <button onClick={() => setFilter("all")}>All</button>
+            <button onClick={() => setFilter("code")}>Code</button>
+            <button onClick={() => setFilter("design")}>Design</button>
+
+          </div>
 
       <div className="projects-grid">
         {projects.map((project) => (
