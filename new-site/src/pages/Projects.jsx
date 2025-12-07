@@ -19,7 +19,7 @@ export default function Projects() {
           </div>
 
         <div className="projects-grid">
-                 {/* {filtered.map(p => <ProjectCard key={p.id} data={p} />)} */}
+                 {filtered.map(p => <ProjectCard key={p.id} data={p} />)} 
         {projects.map((project) => (
           <article key={project.id} className="project-card">
             {/* Thumbnail */}
