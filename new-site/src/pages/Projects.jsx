@@ -11,6 +11,7 @@ export default function Projects() {
   return (
     <section className="projects-section container">
           <h1 className="projects-title">Projects</h1>
+          // TODO: add filtering loginc for project types
           <div>
             <button onClick={() => setFilter("all")}>All</button>
             <button onClick={() => setFilter("code")}>Code</button>
