@@ -53,5 +53,14 @@ export const projects = [
     thumbnail: "/images/Thumb_04.png",
     liveUrl: null,
     repoUrl: null,
+    },
+    {
+    id: "AI Art 1",
+    title: "AI-Generation Design",
+    type: "design",
+    description: "AI e-commerce layout with hero, promo banner, and product grid.",
+    thumbnail: "/images/Thumb_04.png",
+    liveUrl: null,
+    repoUrl: null,
   },
 ];
