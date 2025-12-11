@@ -9,6 +9,12 @@ export default function FilterBar({ categories, onFilter }) {
     onFilter(category);
   };
 
-  return ()
+    return (
+            <div className="flex gap-3 flex-wrap mb-6">
+            {["All", ...categories].map((cat) => ()}
+            </div>
+      
+
+  )
 
 }
