@@ -11,7 +11,10 @@ export default function FilterBar({ categories, onFilter }) {
 
     return (
             <div className="flex gap-3 flex-wrap mb-6">
-            {["All", ...categories].map((cat) => ()}
+            {["All", ...categories].map((cat) => (
+
+                
+            )}
             </div>
       
 
