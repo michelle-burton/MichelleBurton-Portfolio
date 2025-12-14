@@ -24,7 +24,7 @@ export const projects = [
     type: "design",
     description: "Figma e-commerce layout with hero, promo banner, and product grid.",
     thumbnail: "/images/Thumb_06.png",
-    liveUrl: "",
+    liveUrl: null,
     repoUrl: null,
     },
     {
