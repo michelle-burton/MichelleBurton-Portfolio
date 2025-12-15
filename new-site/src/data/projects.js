@@ -34,7 +34,7 @@ export const projects = [
     description: "A fun, open source React app where anyone can add their pup to a shared gallery 🐶✨",
     thumbnail: "/images/Thumb_01.png",
     liveUrl: null,
-    repoUrl: null,
+    repoUrl: "https://github.com/michelleburton/ai-stock-dashboard",
   },
   {
     id: "stock-dashboard",
@@ -70,7 +70,7 @@ export const projects = [
     description: "AI e-commerce layout with hero, promo banner, and product grid.",
     thumbnail: "/images/Thumb_04.png",
     liveUrl: null,
-      repoUrl: null,
+    repoUrl: null,
     },
                 {
     id: "AI Art 3",
