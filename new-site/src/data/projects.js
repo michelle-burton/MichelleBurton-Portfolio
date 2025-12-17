@@ -70,7 +70,7 @@ export const projects = [
     description: "AI e-commerce layout with hero, promo banner, and product grid.",
     thumbnail: "/images/Thumb_04.png",
     liveUrl: null,
-    repoUrl: "https://github.com/michelle-burton/Dog-Viewer",
+    repoUrl: null,
     },
                 {
     id: "AI Art 3",
