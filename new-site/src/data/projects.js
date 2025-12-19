@@ -25,7 +25,7 @@ export const projects = [
     description: "Figma e-commerce layout with hero, promo banner, and product grid.",
     thumbnail: "/images/Thumb_06.png",
     liveUrl: null,
-    repoUrl: null,
+    repoUrl: "https://github.com/michelleburton/ai-stock-dashboard",
     },
     {
     id: "AI-Art 01",
