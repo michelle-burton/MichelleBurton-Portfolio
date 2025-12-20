@@ -34,7 +34,7 @@ export const projects = [
     description: "A fun, open source React app where anyone can add their pup to a shared gallery 🐶✨",
     thumbnail: "/images/Thumb_01.png",
     liveUrl: null,
-    repoUrl: "https://github.com/michelleburton/ai-stock-dashboard",
+    repoUrl: null,
   },
   {
     id: "stock-dashboard",
