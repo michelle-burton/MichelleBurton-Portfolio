@@ -60,7 +60,7 @@ export const projects = [
     type: "design",
     description: "AI e-commerce layout with hero, promo banner, and product grid.",
     thumbnail: "/images/Thumb_04.png",
-    liveUrl: null,
+    liveUrl: "https://github.com/michelleburton/ai-stock-dashboard",
     repoUrl: "https://github.com/michelleburton/ai-stock-dashboard",
     },
         {
