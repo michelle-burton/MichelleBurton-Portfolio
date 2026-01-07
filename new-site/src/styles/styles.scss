@@ -241,6 +241,20 @@ h2 {
 .design-item:hover img {
     transform: scale(1.1);
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;        
+}
+
+footer {
+    margin-top: auto;
+}
 
 /* Overlay Effect */
 .overlay {
