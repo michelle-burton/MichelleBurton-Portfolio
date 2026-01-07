@@ -10,7 +10,7 @@ export default function Projects() {
     // );
   return (
     <section className="projects-section container">
-          <h1 className="projects-title">Projects</h1>
+
 
           {/* <div>
             <button onClick={() => setFilter("all")}>All</button>
