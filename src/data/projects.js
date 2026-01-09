@@ -1,0 +1,75 @@
+// src/data/projects.js
+export const projects = [
+  {
+    id: "Dog-Browser",
+    title: "Dog Browser React App",
+    type: "code", // "code" | "design" | "case-study" etc.
+    description: "Adorable pups browser with filters, favorites, and a playful UI.",
+    thumbnail: "/images/Thumb_08.png",
+    liveUrl: "https://puppy-palace-react-app.onrender.com/",
+    repoUrl: "https://github.com/michelle-burton/Dog-Viewer",
+  },
+  {
+    id: "stock-dashboard",
+    title: "AI Stock Dashboard",
+    type: "code",
+    description: "LLM-assisted dashboard to monitor stocks and dividend income.",
+    thumbnail: "/images/Thumb_09.png",
+    liveUrl: "https://stock-tracker-2tc9.onrender.com/Total%20Return%20Tracker/index.html",
+    repoUrl: "https://github.com/michelle-burton/stock-dashboard",
+  },
+  {
+    id: "figma",
+    title: "Figma Design",
+    type: "design",
+    description: "Figma e-commerce layout with hero, promo banner, and product grid.",
+    thumbnail: "/images/Thumb_05.png",
+    liveUrl: 'https://www.figma.com/design/v8kehIfBL1k8dzy0FPUOO3/buttons02?node-id=0-1&t=uxZ0CEHSEop6q4Y1-1',
+    repoUrl: 'https://www.figma.com/@michelleburton',
+    },
+    {
+    id: "ai-art01",
+    title: "AI Portrait Art ",
+    type: "code", // "code" | "design" | "case-study" etc.
+    description: "A prompt-driven AI artwork blending surreal portraiture, flowing motion, and luminous color to explore emotion and atmosphere.",
+    thumbnail: "/images/Thumb_01.png",
+    liveUrl: 'https://raw.githubusercontent.com/michelle-burton/ai-art-asset/refs/heads/main/img/Thumb_01.png',
+    repoUrl: 'https://github.com/michelle-burton/ai-art-asset/',
+  },
+  {
+    id: "puppy-palace",
+    title: "Puppy Palace",
+    type: "code",
+    description: "Puppy Palace is an open-source, community-driven React application where users can browse, favorite, and share adoptable dogs in a playful, welcoming interface.",
+    thumbnail: "/images/Thumb_10.png",
+    liveUrl: 'https://puppy-palace-react-app.onrender.com/',
+    repoUrl: 'https://github.com/michelle-burton/puppy-palace-react-app',
+  },
+  {
+    id: "AI Art",
+    title: "AI-Generation Design",
+    type: "design",
+    description: "AI-generated digital artwork exploring mood, motion, and color harmony through prompt-driven visual experimentation.",
+    thumbnail: "/images/Thumb_04.png",
+    liveUrl: 'https://github.com/michelle-burton/ai-art-asset/blob/main/img/Thumb_04.png?raw=true',
+    repoUrl: 'https://github.com/michelle-burton/ai-art-asset/',
+    },
+    {
+    id: "Figma2",
+    title: "Figma 2",
+    type: "design",
+    description: "AI e-commerce layout with hero, promo banner, and product grid.",
+    thumbnail: "/images/Thumb_11.png",
+    liveUrl:'https://www.figma.com/community/file/1486545470266507682/gradient',
+    repoUrl: "https://github.com/michelleburton/ai-stock-dashboard",
+    },
+        {
+    id: "AI Art 2",
+    title: "AI-Generation Design",
+    type: "design",
+    description: "A lightweight task-tracking web app built with vanilla JavaScript, focused on fast input, clarity, and simple state management.",
+    thumbnail: "/images/Thumb_07.png",
+    liveUrl:'https://www.michelle-burton.com/code-task-list/index.html',
+    repoUrl: 'https://github.com/michelle-burton/quick-tasks-dashboard',
+    }
+];

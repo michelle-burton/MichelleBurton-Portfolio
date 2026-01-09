@@ -1,65 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJCVMVH3MJ"></script>
-    <script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Michelle Burton | Senior Front-End Engineer</title>
+  <meta
+    name="description"
+    content="Digital portfolio of Michelle Burton, a Senior Front-End Engineer focused on responsive React applications, UI/UX design, and performance-driven web development."
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.michelle-burton.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Michelle Burton | Senior Front-End Engineer" />
+    <meta
+    property="og:description"
+    content="Portfolio of Michelle Burton featuring modern React projects, clean UI, and production-ready front-end engineering."
+    />
+    <meta property="og:url" content="https://www.michelle-burton.com/" />
+    <meta property="og:image" content="https://www.michelle-burton.com/og-image.jpg" />
+    <meta property="og:image:alt" content="Michelle Burton portfolio preview" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Michelle Burton | Senior Front-End Engineer" />
+    <meta
+    name="twitter:description"
+    content="Senior Front-End Engineer building responsive React applications with clean UI and performance focus."
+    />
+    <meta name="twitter:image" content="https://www.michelle-burton.com/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/michelleburton.ico" type="image/x-icon" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+
+  <!-- Theme color (optional) -->
+  <meta name="theme-color" content="#121212" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJCVMVH3MJ"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-LJCVMVH3MJ');
-    </script>
-  	<meta charset="utf-8">
-    <meta property="og:title" content="Michelle Burton – Front-End Developer & Designer" />
-  	<meta name="description" content="Michelle Burton's Digital Portfoli, michelle-burton.com">
-  	<meta name="keywords" content="Michelle Burton's Digital Portfolio, michelle-burton.com">
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
-		<title>Michelle Burton's Digital Portfolio: michelle-burton.com</title>
-        <!-- Favicon link -->
-        <link rel="icon" href="michelleburton.ico" type="image/x-icon">
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-         <!-- Bootstrap link -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <!-- Font Awesome link -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-		<link rel="stylesheet" href="css/style.css">
-    </head>
-	<body>
-    <!-- Header Section -->
-    <div id="header-include"></div>
-
-        <div class="hero">
-                <div class="hero-content">
-                    <h1>Where Design Meets Function</h1>
-                    <p>I bridge aesthetics and technology to deliver intuitive, high-performing web experiences.</p>
-                    <a href="portfolio.html" class="cta-button">Discover More</a>
-                </div>
-        </div>
-    <!-- Footer Section -->
-    <div id="footer-include"></div>
-
-	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-
-    <script>
-        // JavaScript to include the header.html and footer.html content
-        function includeHTML() {
-            fetch('includes/header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header-include').innerHTML = data;
-                });
-
-            fetch('includes/footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer-include').innerHTML = data;
-                });
-        }
-
-        includeHTML();
-    </script>
-    <script src="/js/main.js"></script>
-    </body>
+  </script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
