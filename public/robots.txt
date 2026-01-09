@@ -1,3 +1,12 @@
+# That tells crawlers: “Don’t index anything yet. DEV”
 User-agent: *
-Allow: /
-Sitemap: https://www.michelle-burton.com/sitemap.xml
+Disallow: /
+
+
+# Disallow build artifacts or private routes (optional)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /tmp/
+
+# Point to your sitemap if you have one
+Sitemap: https://yourdomain.com/sitemap.xml
