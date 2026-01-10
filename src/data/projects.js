@@ -6,7 +6,7 @@ export const projects = [
     type: "code", // "code" | "design" | "case-study" etc.
     description: "Adorable pups browser with filters, favorites, and a playful UI.",
     thumbnail: "/images/Thumb_08.png",
-    liveUrl: "https://www.michelle-burton.com/dog-viewer/index.html",
+    liveUrl: "https://www.michelle-burton.com/dog-viewer/",
     repoUrl: "https://github.com/michelle-burton/Dog-Viewer",
   },
   {
