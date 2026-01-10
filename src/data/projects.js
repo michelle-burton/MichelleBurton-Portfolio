@@ -69,7 +69,7 @@ export const projects = [
     type: "design",
     description: "A lightweight task-tracking web app built with vanilla JavaScript, focused on fast input, clarity, and simple state management.",
     thumbnail: "/images/Thumb_07.png",
-    liveUrl:'https://www.michelle-burton.com/code-task-list/index.html',
+    liveUrl:'https://www.michelle-burton.com/code-task-list/',
     repoUrl: 'https://github.com/michelle-burton/quick-tasks-dashboard',
     }
 ];
