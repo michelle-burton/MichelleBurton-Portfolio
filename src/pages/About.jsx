@@ -5,7 +5,8 @@ function About() {
             <section className="about-designer">
                 <div className="container">
                     <div className="designer-photo">
-                        <img src="images/MichelleBurton.jpeg" alt="Designer Photo: Michelle Burton"/>
+                     <img src="images/MichelleBurton.jpeg" alt="Designer Photo: Michelle Burton" /> 
+              
                     </div>
                     <div className="designer-info">
                         <h2>About Me</h2>
@@ -18,7 +19,14 @@ function About() {
                             <li>📱 User-focused, modern aesthetics</li>
                             <li>🔧 Precision in every pixel</li>
                         </ul>
-                        <a href="/portfolio" className="cta-button">View My Work</a> 
+                        <br></br>
+                       <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="msmichelleburton" data-version="v1"><a class="badge-base__link LI-simple-link text-black" href="https://www.linkedin.com/in/msmichelleburton?trk=profile-badge">Michelle Burton</a></div>
+              
+                       
+                        {/* <a href="/portfolio" className="cta-button">View My Work</a>   */}
+
+              
+              
                     </div>
                 </div>
             </section>

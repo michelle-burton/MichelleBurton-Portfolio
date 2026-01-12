@@ -303,11 +303,16 @@ footer {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #ff6b6b;
+    align-self: flex-start;
 }
 
 /* Designer Info */
 .designer-info {
     flex: 1;
+}
+
+.designer-photo {
+    align-self: flex-start;
 }
 
 .designer-info h2 {
