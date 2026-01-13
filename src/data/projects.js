@@ -1,5 +1,19 @@
 // src/data/projects.js
 export const projects = [
+    {
+    id: "fis-enterprise-ui",
+    title: "Enterprise Financial Platform",
+    company: "FIS",
+    type: "enterprise",
+    description:
+        "Front-end development for a large-scale financial services platform. Built and maintained production React interfaces in a secure, enterprise environment with a focus on accessibility, performance, and design system consistency.",
+    thumbnail: "/images/Thumb_13.png",
+    role: "Front-End Developer",
+    tech: ["React", "TypeScript", "SCSS", "REST APIs", "WCAG"],
+    confidential: true,
+    notes:
+        "This project was built in a secure enterprise environment. Source code and live demos are not publicly available."
+    },
   {
     id: "puppy-palace",
     title: "Puppy Palace",
@@ -80,21 +94,6 @@ export const projects = [
     thumbnail: "/images/Thumb_04.png",
     liveUrl: 'https://github.com/michelle-burton/ai-art-asset/blob/main/img/Thumb_04.png?raw=true',
     repoUrl: 'https://github.com/michelle-burton/ai-art-asset/',
-    },
-    {
-    id: "fis-enterprise-ui",
-    title: "Enterprise Financial Platform",
-    company: "FIS",
-    type: "enterprise",
-    description:
-        "Front-end development for a large-scale financial services platform. Built and maintained production React interfaces in a secure, enterprise environment with a focus on accessibility, performance, and design system consistency.",
-    thumbnail: "/images/Thumb_13.png",
-    role: "Front-End Developer",
-    tech: ["React", "TypeScript", "SCSS", "REST APIs", "WCAG"],
-    confidential: true,
-    notes:
-        "This project was built in a secure enterprise environment. Source code and live demos are not publicly available."
     }
-
 
 ];
