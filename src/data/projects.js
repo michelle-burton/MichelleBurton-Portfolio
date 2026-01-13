@@ -88,7 +88,7 @@ export const projects = [
     type: "enterprise",
     description:
         "Front-end development for a large-scale financial services platform. Built and maintained production React interfaces in a secure, enterprise environment with a focus on accessibility, performance, and design system consistency.",
-    thumbnail: "/images/fis-dashboard.png",
+    thumbnail: "/images/Thumb_13.png",
     role: "Front-End Developer",
     tech: ["React", "TypeScript", "SCSS", "REST APIs", "WCAG"],
     confidential: true,
