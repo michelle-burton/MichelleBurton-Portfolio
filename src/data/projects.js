@@ -2,11 +2,11 @@
 export const projects = [
     {
     id: "fis-enterprise-ui",
-    title: "Enterprise Financial Platform",
+    title: "FIS: Enterprise Financial Platform",
     company: "FIS",
     type: "enterprise",
     description:
-        "Front-end development for a large-scale financial services platform. Built and maintained production React interfaces in a secure, enterprise environment with a focus on accessibility, performance, and design system consistency.",
+        "Front-end development for a FIS, large-scale financial services platform. Built and maintained production React interfaces in a secure, enterprise environment with a focus on accessibility, performance, and design system consistency.",
     thumbnail: "/images/Thumb_13.png",
     role: "Front-End Developer",
     tech: ["React", "TypeScript", "SCSS", "REST APIs", "WCAG"],
