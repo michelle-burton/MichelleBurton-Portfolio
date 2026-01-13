@@ -74,3 +74,8 @@ $bp: (
   gap: 0.5rem;
   flex-wrap: wrap;
 }
+
+
+.green-text {
+  color: rgb(var(--bs-link-color-rgb));
+}

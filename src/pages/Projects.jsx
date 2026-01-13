@@ -42,11 +42,16 @@ export default function Projects() {
                             <a href={project.liveUrl} target="_blank" rel="noreferrer">
                                 Live
                             </a>
-                            )}&nbsp;&nbsp; | &nbsp;&nbsp;
+                              )}
+                           {project.liveUrl && project.repoUrl && <span> | </span>}
                             {project.repoUrl && (
                             <a href={project.repoUrl} target="_blank" rel="noreferrer">
                                 Repo
                             </a>
+                              )}
+                              {project.confidential && (
+                                  <span className="small green-text">Private Enterprise Work<br></br> Not publicly accessible</span>
+                                  
                             )}
                         </div>
                     </div>
