@@ -14,6 +14,15 @@ export const projects = [
     notes:
         "This project was built in a secure enterprise environment. Source code and live demos are not publicly available."
     },
+      {
+    id: "stock-dashboard",
+    title: "Stock Return Tracker – Data Dashboard",
+    type: "code",
+    description: "A stock return tracking dashboard focused on comparing investments and returns, designed as a foundation for future AI-assisted insights.",
+    thumbnail: "/images/Thumb_09.png",
+    liveUrl: "https://stock-tracker-2tc9.onrender.com/Total%20Return%20Tracker/index.html",
+    repoUrl: "https://github.com/michelle-burton/stock-dashboard",
+    },
   {
     id: "puppy-palace",
     title: "Puppy Palace",
@@ -31,15 +40,6 @@ export const projects = [
     thumbnail: "/images/Thumb_07.png",
     liveUrl:'https://www.michelle-burton.com/code-task-list/',
     repoUrl: 'https://github.com/michelle-burton/quick-tasks-dashboard',
-    },
-  {
-    id: "stock-dashboard",
-    title: "Stock Return Tracker – Data Dashboard",
-    type: "code",
-    description: "A stock return tracking dashboard focused on comparing investments and returns, designed as a foundation for future AI-assisted insights.",
-    thumbnail: "/images/Thumb_09.png",
-    liveUrl: "https://stock-tracker-2tc9.onrender.com/Total%20Return%20Tracker/index.html",
-    repoUrl: "https://github.com/michelle-burton/stock-dashboard",
     },
     {
         id: "telemetry",
