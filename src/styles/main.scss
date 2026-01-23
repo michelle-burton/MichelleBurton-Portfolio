@@ -1,3 +1,6 @@
+/* 0. Load theme variables first */
+@import "./global";
+
 /* 1. Load Bootstrap functions first */
 @import "bootstrap/scss/functions";
 

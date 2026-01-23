@@ -35,10 +35,10 @@ $bp: (
 }
 
 .project-card {
-  background: #fff;
+  background: var(--color-surface-elevated);
   border-radius: 0.75rem;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow-md);
   display: flex;
   flex-direction: column;
 }
@@ -53,7 +53,7 @@ $bp: (
 
 .project-body {
   padding: 1rem 1.25rem 1.25rem;
-  color: #444;
+  color: var(--color-text);
 }
 
 .project-name {

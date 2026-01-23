@@ -17,7 +17,7 @@ input, textarea, .btn-submit {
   width: 100%;
   padding: 0.75rem;
   font: inherit;
-  border: 1px solid #6b7280; /* Ensure ≥ 3:1 with background */
+  border: 1px solid var(--color-border-light); /* Ensure ≥ 3:1 with background */
   border-radius: 0.5rem;
 }
 input:focus-visible, textarea:focus-visible, button:focus-visible {
@@ -51,8 +51,8 @@ button {
 }
 
 .form-floating > .form-control {
-    background-color: #222;
-    color: white;
+    background-color: var(--color-input-bg);
+    color: var(--color-input-text);
 }
 
 .form-floating > label {

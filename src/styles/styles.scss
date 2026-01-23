@@ -38,7 +38,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #1e1e1e;
+    background-color: var(--color-surface);
 }
  @media (min-width: 320px) {
     .navbar {
@@ -68,25 +68,25 @@ html {
 
 .nav-links a {
     text-decoration: none;
-    color: #bbb;
+    color: var(--color-text-secondary);
     font-size: 1rem;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #fff;
+    color: var(--color-text);
 }
 
 /* Nav links styling */
 .navbar .nav-link {
   font-weight: 500;
   margin-left: 0.75rem;
-  color: #e0e0e0 !important;
+  color: var(--color-text-muted) !important;
   transition: color 0.25s ease, transform 0.2s ease;
 }
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-  color: #f15bb5 !important;
+  color: var(--color-link-active) !important;
   transform: translateY(-1px);
 }
 
@@ -100,14 +100,14 @@ html {
 
 
 .navbar .nav-link.active {
-  color: #f15bb5 !important;
+  color: var(--color-link-active) !important;
   position: relative;
 }
 .navbar .nav-link.active::after {
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: -4px;
-  height: 2px; border-radius: 2px; background: #f15bb5;
+  height: 2px; border-radius: 2px; background: var(--color-link-active);
 }
 
 .navbar-brand {
@@ -141,7 +141,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: var(--overlay-dark);
 }
 
 /* Hero Content */
@@ -159,7 +159,7 @@ html {
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #ccc;
+    color: var(--color-text-muted);
 }
 
 /* CTA Button */
@@ -167,15 +167,15 @@ html {
     display: inline-block;
     padding: 12px 25px;
     font-size: 1rem;
-    background-color: #ff6b6b;
-    color: #fff;
+    background-color: var(--color-btn-bg);
+    color: var(--color-btn-text);
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #ff5252;
+    background-color: var(--color-btn-hover);
 }
 
 
@@ -195,14 +195,14 @@ h2 {
     margin: 5px;
     border: none;
     cursor: pointer;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--color-btn-secondary-bg);
+    color: var(--color-btn-secondary-text);
     border-radius: 5px;
     transition: background 0.3s;
 }
 
 .filter-btn:hover, .filter-btn.active {
-    background-color: #ff6b6b;
+    background-color: var(--color-btn-bg);
 }
 
 .featured-designs {
@@ -263,18 +263,18 @@ footer {
     left: 0;
     width: 100%;
     padding: 15px;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
+    background: var(--overlay-darker);
+    color: var(--color-text);
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s;
 }
 .design-item .overlay a {
-    color: white;
+    color: var(--color-text);
     text-decoration: none;
 }
 .design-item .overlay a:hover {
-    color: #2cb2fa;
+    color: var(--color-link);
 }
 
 .design-item:hover .overlay {
@@ -302,7 +302,7 @@ footer {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #ff6b6b;
+    border: 3px solid var(--color-accent-secondary);
     align-self: flex-start;
 }
 
@@ -322,7 +322,7 @@ footer {
 
 .bio {
     font-size: 1rem;
-    color: #ccc;
+    color: var(--color-text-muted);
     margin-bottom: 15px;
 }
 
@@ -340,7 +340,7 @@ h3 {
 .design-philosophy li {
     font-size: 1rem;
     padding: 5px 0;
-    color: #bbb;
+    color: var(--color-text-secondary);
 }
 
 /* Video Introduction */
@@ -352,7 +352,7 @@ h3 {
     width: 100%;
     max-width: 600px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-lg);
 }
 
 
@@ -367,8 +367,8 @@ h3 {
 
 /* Dark Theme */
 body {
-    background-color: #121212;
-    color: #fff;
+    background-color: var(--color-bg);
+    color: var(--color-text);
     text-align: center;
     padding: 0;
     display: flex;
@@ -391,7 +391,7 @@ body {
 
 .contact-section p {
     font-size: 1rem;
-    color: #ccc;
+    color: var(--color-text-muted);
     margin-bottom: 20px;
 }
 
@@ -407,10 +407,10 @@ body {
 .contact-form textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #444;
+    border: 1px solid var(--color-input-border);
     border-radius: 5px;
-    background-color: #222;
-    color: #fff;
+    background-color: var(--color-input-bg);
+    color: var(--color-input-text);
 }
 
 .contact-form textarea {
@@ -419,8 +419,8 @@ body {
 
 .contact-form button {
     padding: 10px;
-    background-color: #ff6b6b;
-    color: #fff;
+    background-color: var(--color-btn-bg);
+    color: var(--color-btn-text);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -428,7 +428,7 @@ body {
 }
 
 .contact-form button:hover {
-    background-color: #e85a5a;
+    background-color: var(--color-btn-hover);
 }
 
 /* Social Media Links */
@@ -440,7 +440,7 @@ body {
 
 .social-icon {
     text-decoration: none;
-    color: #fff;
+    color: var(--color-text);
     padding: 10px 15px;
     border-radius: 5px;
     transition: background 0.3s;
@@ -458,11 +458,11 @@ body {
 
 /* Footer styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--color-footer-bg);
+    color: var(--color-text);
     padding: 20px 0;
     text-align: center;
-    border-top: 1px #E0E0E0 solid;
+    border-top: 1px var(--color-footer-border) solid;
 }
 
 .footer-content {
@@ -477,7 +477,7 @@ footer {
 }
 
 .footer-content a {
-    color: #fff;
+    color: var(--color-text);
     text-decoration: none;
     margin: 0 10px;
 }
@@ -502,7 +502,7 @@ footer {
 
 /* Charcoal background tone */
 .bg-dark {
-  background-color: #1e1e1e !important; /* deep charcoal */
+  background-color: var(--color-surface) !important; /* deep charcoal */
 }
 
 /* Gradient logo text */

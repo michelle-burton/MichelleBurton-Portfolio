@@ -1,0 +1,115 @@
+/* Theme Variables - Dark theme is default */
+:root {
+  /* Background colors */
+  --color-bg: #121212;
+  --color-surface: #1e1e1e;
+  --color-surface-elevated: #222;
+  
+  /* Text colors */
+  --color-text: #fff;
+  --color-text-muted: #ccc;
+  --color-text-secondary: #bbb;
+  --color-text-tertiary: #999;
+  
+  /* Border colors */
+  --color-border: #444;
+  --color-border-light: #6b7280;
+  --color-border-muted: #ccc;
+  
+  /* Link colors */
+  --color-link: #2cb2fa;
+  --color-link-hover: #2cb2fa;
+  --color-link-active: #f15bb5;
+  
+  /* Accent colors */
+  --color-accent: #f15bb5;
+  --color-accent-contrast: #fff;
+  --color-accent-secondary: #ff6b6b;
+  --color-accent-secondary-hover: #ff5252;
+  
+  /* Button colors */
+  --color-btn-bg: #ff6b6b;
+  --color-btn-text: #fff;
+  --color-btn-hover: #ff5252;
+  --color-btn-secondary-bg: #333;
+  --color-btn-secondary-text: #fff;
+  --color-btn-secondary-hover: #ff6b6b;
+  
+  /* Input colors */
+  --color-input-bg: #222;
+  --color-input-text: #fff;
+  --color-input-border: #444;
+  --color-input-border-focus: #1d4ed8;
+  --color-input-placeholder: #999;
+  
+  /* Shadow */
+  --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  
+  /* Overlay */
+  --overlay-dark: rgba(0, 0, 0, 0.6);
+  --overlay-darker: rgba(0, 0, 0, 0.7);
+  
+  /* Footer */
+  --color-footer-bg: #333;
+  --color-footer-border: #E0E0E0;
+}
+
+/* Light theme override */
+:root[data-theme="light"] {
+  /* Background colors */
+  --color-bg: #ffffff;
+  --color-surface: #f5f5f5;
+  --color-surface-elevated: #ffffff;
+  
+  /* Text colors */
+  --color-text: #000;
+  --color-text-muted: #666;
+  --color-text-secondary: #888;
+  --color-text-tertiary: #999;
+  
+  /* Border colors */
+  --color-border: #ccc;
+  --color-border-light: #e3e3e3;
+  --color-border-muted: #e3e3e3;
+  
+  /* Link colors */
+  --color-link: #2cb2fa;
+  --color-link-hover: #2cb2fa;
+  --color-link-active: #f15bb5;
+  
+  /* Accent colors */
+  --color-accent: #f15bb5;
+  --color-accent-contrast: #fff;
+  --color-accent-secondary: #ff6b6b;
+  --color-accent-secondary-hover: #ff5252;
+  
+  /* Button colors */
+  --color-btn-bg: #ff6b6b;
+  --color-btn-text: #fff;
+  --color-btn-hover: #ff5252;
+  --color-btn-secondary-bg: #333;
+  --color-btn-secondary-text: #fff;
+  --color-btn-secondary-hover: #ff6b6b;
+  
+  /* Input colors */
+  --color-input-bg: #fff;
+  --color-input-text: #000;
+  --color-input-border: #ccc;
+  --color-input-border-focus: #1d4ed8;
+  --color-input-placeholder: #999;
+  
+  /* Shadow */
+  --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  
+  /* Overlay */
+  --overlay-dark: rgba(0, 0, 0, 0.3);
+  --overlay-darker: rgba(0, 0, 0, 0.4);
+  
+  /* Footer */
+  --color-footer-bg: #f5f5f5;
+  --color-footer-border: #e0e0e0;
+}

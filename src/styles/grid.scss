@@ -13,7 +13,7 @@
   }
 
   .projects-subtitle {
-    color: #666;
+    color: var(--color-text-muted);
     margin-bottom: 1rem;
     font-size: 0.95rem;
   }
@@ -26,8 +26,8 @@
 }
 
 .filter-btn {
-  border: 1px solid #ccc;
-  background: #fff;
+  border: 1px solid var(--color-border-muted);
+  background: var(--color-surface-elevated);
   padding: 0.35rem 0.9rem;
   border-radius: 999px;
   font-size: 0.85rem;
@@ -35,9 +35,9 @@
   transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 
   &--active {
-    background: #000;
-    color: #fff;
-    border-color: #000;
+    background: var(--color-btn-secondary-bg);
+    color: var(--color-btn-secondary-text);
+    border-color: var(--color-btn-secondary-bg);
   }
 }
 
@@ -50,10 +50,10 @@
 
 .project-card {
   border-radius: 0.75rem;
-  border: 1px solid #e3e3e3;
+  border: 1px solid var(--color-border-light);
   padding: 1rem 1.1rem;
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  background: var(--color-surface-elevated);
+  box-shadow: var(--shadow-sm);
 }
 
 .project-card-title {
@@ -66,19 +66,19 @@
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #888;
+  color: var(--color-text-secondary);
   margin-bottom: 0.5rem;
 }
 
 .project-card-description {
   font-size: 0.9rem;
-  color: #444;
+  color: var(--color-text);
 }
 
 .project-grid-empty {
   grid-column: 1/-1;
   text-align: center;
-  color: #777;
+  color: var(--color-text-muted);
   font-size: 0.95rem;
 }
 
