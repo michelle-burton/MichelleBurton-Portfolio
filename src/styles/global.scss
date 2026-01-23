@@ -113,3 +113,12 @@
   --color-footer-bg: #f5f5f5;
   --color-footer-border: #e0e0e0;
 }
+
+/* Navbar overrides boostrap */
+:root[data-theme="light"] {
+  --navbar-bg: #f1f3f6; // slightly darker than page bg
+}
+
+:root[data-theme="dark"] {
+  --navbar-bg: var(--color-surface);
+}
