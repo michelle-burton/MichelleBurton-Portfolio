@@ -11,7 +11,7 @@ function App() {
   const [theme, setTheme] = useState(() => {
     // initialize from <html data-theme="..."> OR localStorage OR default
     const htmlTheme = document.documentElement.getAttribute("data-theme");
-    return localStorage.getItem("theme") || htmlTheme || "light";
+    return localStorage.getItem("theme") || htmlTheme || "dark";
   });
 
   useEffect(() => {
