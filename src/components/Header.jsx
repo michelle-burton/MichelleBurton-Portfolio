@@ -52,7 +52,7 @@ export default function Header({ theme, onToggleTheme }) {
                   onClick={onToggleTheme}
                   aria-label="Toggle theme"
                 >
-                  {isLight ? "Dark" : "☀️ Light"}
+                  {isLight ? "🌙 Dark" : "☀️ Light"}
                 </button>
               </li>
             </ul>
