@@ -1,5 +1,28 @@
 // src/data/projects.js
 export const projects = [
+    
+    {
+  id: "brady-corporation-bradyconnect",
+  title: "BradyConnect — Asset Tracking & Compliance Platform",
+  company: "Brady Corporation",
+  type: "enterprise",
+  description:
+    "Senior front-end development for BradyConnect, a cloud-based asset tracking and compliance platform. Designed and built scalable Angular applications to replace manual workflows, with a focus on responsive design, performance, and accessibility in an enterprise environment.",
+  thumbnail: "/images/Thumb_14.png",
+  role: "Senior Front-End Engineer",
+  tech: [
+    "Angular",
+    "TypeScript",
+    "RxJS",
+    "Angular Material",
+    "REST APIs",
+    "SCSS",
+    "Accessibility"
+  ],
+  confidential: true,
+  notes:
+    "This project was developed for internal and enterprise customers at Brady Corporation. Source code and live demos are not publicly accessible due to confidentiality."
+    },
     {
     id: "fis-enterprise-ui",
     title: "FIS: Enterprise Financial Platform",
