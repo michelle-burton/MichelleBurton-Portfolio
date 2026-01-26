@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 const LINKS = {
   email: "mailto:msmichelleburton@yahoo.com",
   linkedin: "https://linkedin.com/in/msmichelleburton",
-  resume: "https://www.michelle-burton.com/MICHELLE_BURTON.pdf",
+  resume: "/MICHELLE_BURTON.pdf",
   contact: "https://www.michelle-burton.com/contact",
 };
 
