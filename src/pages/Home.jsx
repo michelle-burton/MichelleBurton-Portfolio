@@ -1,4 +1,4 @@
-
+import ContactFloat from "../components/ContactFloat";
 
 // Homepage
 function Home() {
@@ -9,6 +9,7 @@ function Home() {
                 <p>I bridge design and engineering to create scalable, performance-driven React applications with clean UX and thoughtful UI.</p>
                 <a href="/projects" className="cta-button">View Projects</a>
             </div>
+               <ContactFloat />
         </div>
     )
 }
