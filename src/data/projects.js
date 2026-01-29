@@ -120,7 +120,7 @@ export const projects = [
     repoUrl: 'https://github.com/michelle-burton/ai-art-asset/',
     },
     {
-    id: "Figma3",
+    id: "Figma4",
     title: "Portfolio Homepage UX & UI Design",
     type: "design",
     description: "Responsive homepage layout for michelle-burton.com, designed in Figma with a focus on layout systems, visual balance, and developer-ready structure.",
