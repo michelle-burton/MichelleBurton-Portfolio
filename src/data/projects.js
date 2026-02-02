@@ -129,6 +129,15 @@ export const projects = [
     liveUrl: 'https://www.figma.com/design/v8kehIfBL1k8dzy0FPUOO3/buttons02?node-id=0-1&t=uxZ0CEHSEop6q4Y1-1',
     repoUrl: 'https://www.figma.com/@michelleburton',
     },
+      {
+    id: "AI Art",
+    title: "AI-Generation Design",
+    type: "design",
+    description: "AI-generated digital artwork exploring mood, motion, and color harmony through prompt-driven visual experimentation.",
+    thumbnail: "/images/Thumb_04.png",
+    liveUrl: 'https://github.com/michelle-burton/ai-art-asset/blob/main/img/Thumb_04.png?raw=true',
+    repoUrl: 'https://github.com/michelle-burton/ai-art-asset/',
+    },
         {
     id: "Figma2",
     title: "Gradient UI Design – Figma",
@@ -138,14 +147,6 @@ export const projects = [
     liveUrl:'https://www.figma.com/community/file/1486545470266507682/gradient',
     repoUrl: "https://github.com/michelleburton/ai-stock-dashboard",
     },
-  {
-    id: "AI Art",
-    title: "AI-Generation Design",
-    type: "design",
-    description: "AI-generated digital artwork exploring mood, motion, and color harmony through prompt-driven visual experimentation.",
-    thumbnail: "/images/Thumb_04.png",
-    liveUrl: 'https://github.com/michelle-burton/ai-art-asset/blob/main/img/Thumb_04.png?raw=true',
-    repoUrl: 'https://github.com/michelle-burton/ai-art-asset/',
-    },
+
 
 ];
