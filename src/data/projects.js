@@ -120,7 +120,15 @@ export const projects = [
     liveUrl: 'https://raw.githubusercontent.com/michelle-burton/ai-art-asset/refs/heads/main/img/Thumb_01.png',
     repoUrl: 'https://github.com/michelle-burton/ai-art-asset/',
     },
-
+      {
+    id: "figma",
+    title: "Figma UI Component Design",
+    type: "design",
+    description: "Exploration of modern button components in Figma, focusing on color, depth, glow effects, and rounded geometry for dark-mode interfaces.",
+    thumbnail: "/images/Thumb_05.png",
+    liveUrl: 'https://www.figma.com/design/v8kehIfBL1k8dzy0FPUOO3/buttons02?node-id=0-1&t=uxZ0CEHSEop6q4Y1-1',
+    repoUrl: 'https://www.figma.com/@michelleburton',
+    },
       {
     id: "AI Art",
     title: "AI-Generation Design",
@@ -129,15 +137,6 @@ export const projects = [
     thumbnail: "/images/Thumb_04.png",
     liveUrl: 'https://github.com/michelle-burton/ai-art-asset/blob/main/img/Thumb_04.png?raw=true',
     repoUrl: 'https://github.com/michelle-burton/ai-art-asset/',
-    },
-          {
-    id: "figma",
-    title: "Figma UI Component Design",
-    type: "design",
-    description: "Exploration of modern button components in Figma, focusing on color, depth, glow effects, and rounded geometry for dark-mode interfaces.",
-    thumbnail: "/images/Thumb_05.png",
-    liveUrl: 'https://www.figma.com/design/v8kehIfBL1k8dzy0FPUOO3/buttons02?node-id=0-1&t=uxZ0CEHSEop6q4Y1-1',
-    repoUrl: 'https://www.figma.com/@michelleburton',
     },
         {
     id: "Figma2",
