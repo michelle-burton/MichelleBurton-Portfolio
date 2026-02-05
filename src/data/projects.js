@@ -92,8 +92,8 @@ export const projects = [
         type: "code",
         description: "Interactive drag-and-drop web application created for Subaru at DCI Artform. Focused on modular UI components, intuitive user interactions, and maintainable front-end architecture to support client-driven customization workflows.",
         thumbnail: "/images/Thumb_17.png",
-        liveUrl: "https://web.archive.org/web/20160116172727/https://www.badgeofownership.com/",
-        repoUrl: "https://web.archive.org/web/20160116172727/https://www.badgeofownership.com/",
+        liveUrl: "https://www.badgeofownership.com/customcategory/buildyourbadge",
+        repoUrl: "https://www.badgeofownership.com/customcategory/buildyourbadge",
     },
     {
     id: "Dog-Browser",
