@@ -84,15 +84,7 @@ export const projects = [
     liveUrl: 'https://puppy-palace-react-app.onrender.com/',
     repoUrl: 'https://github.com/michelle-burton/puppy-palace-react-app',
     },
-    {
-    id: "AI Art 2",
-    title: "Quick Tasks – JavaScript Mini App",
-    type: "code",
-    description: "A lightweight task-tracking web app built with vanilla JavaScript, focused on fast input, clarity, and simple state management.",
-    thumbnail: "/images/Thumb_07.png",
-    liveUrl:'https://www.michelle-burton.com/code-task-list/',
-    repoUrl: 'https://github.com/michelle-burton/quick-tasks-dashboard',
-    },
+
     {
         id: "telemetry",
         title: "Vehicle Telemetry Service",
@@ -101,6 +93,16 @@ export const projects = [
         thumbnail: "/images/Thumb_12.png",
         liveUrl: "https://github.com/michelle-burton/vehicle-telemetry-service#readme",
         repoUrl: "https://github.com/michelle-burton/vehicle-telemetry-service",
+    },
+
+    {
+        id: "DCI",
+        title: "Subaru Badge of Ownership App",
+        type: "code",
+        description: "Interactive drag-and-drop web application created for Subaru at DCI Artform. Focused on modular UI components, intuitive user interactions, and maintainable front-end architecture to support client-driven customization workflows.",
+        thumbnail: "/images/Thumb_17.png",
+        liveUrl: "https://web.archive.org/web/20160116172727/https://www.badgeofownership.com/",
+        repoUrl: "https://web.archive.org/web/20160116172727/https://www.badgeofownership.com/",
     },
     {
     id: "Dog-Browser",
@@ -147,6 +149,14 @@ export const projects = [
     liveUrl:'https://www.figma.com/community/file/1486545470266507682/gradient',
     repoUrl: "https://github.com/michelleburton/ai-stock-dashboard",
     },
-
+    {
+    id: "AI Art 2",
+    title: "Quick Tasks – JavaScript Mini App",
+    type: "code",
+    description: "A lightweight task-tracking web app built with vanilla JavaScript, focused on fast input, clarity, and simple state management.",
+    thumbnail: "/images/Thumb_07.png",
+    liveUrl:'https://www.michelle-burton.com/code-task-list/',
+    repoUrl: 'https://github.com/michelle-burton/quick-tasks-dashboard',
+    },
 
 ];
