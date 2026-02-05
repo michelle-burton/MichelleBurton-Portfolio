@@ -56,15 +56,6 @@ export const projects = [
     liveUrl: 'https://web.archive.org/web/20140103062650/https://slicemultimedia.com/',
     repoUrl: 'https://web.archive.org/web/20140103062650/https://slicemultimedia.com/',
     },
-            {
-    id: "Figma4",
-    title: "Portfolio Homepage UX & UI Design",
-    type: "design",
-    description: "Responsive homepage layout for michelle-burton.com, designed in Figma with a focus on layout systems, visual balance, and developer-ready structure.",
-    thumbnail: "/images/Thumb_15.png",
-    liveUrl:'https://www.figma.com/design/vwh3ngQ0dh2HU1uFccH2Jq/michelle-burton.com?node-id=0-1&m=dev&t=OUpBmZFgdm6AeN89-1',
-    repoUrl: "https://www.figma.com/design/vwh3ngQ0dh2HU1uFccH2Jq/michelle-burton.com?node-id=0-1&m=dev&t=OUpBmZFgdm6AeN89-1",
-    },
         {
     id: "Figma4",
     title: "Portfolio Homepage UX & UI Design",
