@@ -16,6 +16,15 @@ export const projects = [
     notes:
         "This project was built in a secure enterprise environment. Source code and live demos are not publicly available."
     },
+    {
+        id: "Buttons",
+        title: "Claude to Figma: MCP-Powered Design System Workflow",
+        type: "code",
+        description: "Architected an AI-to-design automation pipeline using Claude as a reasoning layer and MCP as a structured execution interface to Figma.",
+        thumbnail: "/images/Thumb_18.png",
+        liveUrl: "https://www.figma.com/design/9s21ZGfHYzaXsa12YhZCW6/buttons?node-id=10-3&t=vqnQSdXXFJ5vMHVu-1",
+        repoUrl: 'https://www.figma.com/@michelleburton',
+    },
       {
     id: "stock-dashboard",
     title: "Stock Return Tracker – Data Dashboard",
