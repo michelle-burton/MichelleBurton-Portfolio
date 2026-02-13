@@ -22,7 +22,7 @@ export const projects = [
         type: "code",
         description: "Architected an AI-to-design automation pipeline using Claude as a reasoning layer and MCP as a structured execution interface to Figma.",
         thumbnail: "/images/Thumb_18.png",
-        liveUrl: "https://www.figma.com/design/9s21ZGfHYzaXsa12YhZCW6/buttons?node-id=10-3&t=vqnQSdXXFJ5vMHVu-1",
+        liveUrl: "https://www.figma.com/community/file/1603949739563890471",
         repoUrl: 'https://www.figma.com/@michelleburton',
     },
       {
