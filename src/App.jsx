@@ -6,6 +6,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Projects from "./pages/Projects.jsx";
+import QuantumPomThanks from "./pages/QuantumPomThanks";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/aj-thanks-quantum" element={<QuantumPomThanks />} />
       </Routes>
       <Footer />
     </Router>
