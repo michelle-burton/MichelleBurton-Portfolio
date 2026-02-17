@@ -16,7 +16,7 @@ export default function QuantumPomThanks() {
             playsInline
             preload="metadata"
           >
-            <source src="/videos/Quantum-pom.mp4" type="video/mp4" />
+            <source src="/videos/quantum-pom.mp4" type="video/mp4" />
             Sorry—your browser can’t play this video.
           </video>
         </div>
