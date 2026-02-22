@@ -234,6 +234,17 @@ strong {
 
 .footer-links a:hover {
   opacity: 1;
+  text-decoration: none;
+}
+
+a.linkFB {
+  color: #558ae0; //facebook blue
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+}
+ a.linkFB:hover {
+  opacity: 1;
+  text-decoration: none;
 }
 
 /* Mobile stack */
