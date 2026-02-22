@@ -40,3 +40,4 @@ The site showcases selected projects, highlights my front-end engineering focus,
 - Senior Front-End Engineer
 - Portfolio: https://www.michelle-burton.com
 - GitHub: https://github.com/michelleburton
+- YouTube: https://www.youtube.com/@QuantumAIDesign
