@@ -6,7 +6,7 @@ export default function QuantumPomThanks() {
       <div style={styles.card}>
         <header style={styles.header}>
           <h1 style={styles.title}>Quantum Pom</h1>
-          <p style={styles.subtitle}>Thanks, AJ 💜</p>
+          <p style={styles.subtitle}>Thanks,  💜</p>
         </header>
 
         <div style={styles.videoWrap}>
@@ -23,7 +23,7 @@ export default function QuantumPomThanks() {
 
         <footer style={styles.footer}>
           <p style={styles.note}>
-            AJ — thank you for your time and for taking a look at this experiment.
+            Thank you for your time and for taking a look at this experiment.
           </p>
           <p style={styles.small}>
             Michelle Burton • Quantum AI Design
