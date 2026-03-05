@@ -1,0 +1,54 @@
+
+import { projects } from "../data/projects";
+
+
+export default function GraphicProjects() {
+
+  return (
+    <section className="projects-section container">
+
+
+          <div className="projects-grid">
+              {projects.map((project) => (
+                <div className="project-card">
+                    <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-thumb"
+                    aria-label={`Open live site for ${project.title}`}
+                    >
+                    <img src={project.thumbnail} alt={`${project.title} thumbnail`} />
+                      </a>
+                    <div className="project-body">
+                        <div className="project-meta">
+                        <span className="project-type">{project.type}</span>
+                          </div>
+                           <h3 className="project-title">{project.title}</h3>
+                           <p className="project-description">{project.description}</p>
+                        <div className="project-links">
+                            {project.liveUrl && (
+                            <a href={project.liveUrl} target="_blank" rel="noreferrer">
+                                Live
+                            </a>
+                              )}
+                           {project.liveUrl && project.repoUrl && <span> | </span>}
+                            {project.repoUrl && (
+                            <a href={project.repoUrl} target="_blank" rel="noreferrer">
+                                Repo
+                            </a>
+                              )}
+                              {project.confidential && (
+                                  <span className="small green-text">Private Enterprise Work<br></br> Not publicly accessible</span>
+                                  
+                            )}
+                        </div>
+                    </div>
+                </div>
+                  
+              ))}
+
+      </div>
+    </section>
+  );
+}
