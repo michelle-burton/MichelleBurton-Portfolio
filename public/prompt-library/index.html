@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt Library</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Prompt Library</h1>
+      <p class="subtitle">Save and manage your AI prompts</p>
+    </header>
+
+    <section class="form-section">
+      <h2>New Prompt</h2>
+      <form id="prompt-form">
+        <div class="field">
+          <label for="title">Title</label>
+          <input type="text" id="title" placeholder="e.g. Refactor function" required />
+        </div>
+        <div class="field">
+          <label for="model">Model Name</label>
+          <input type="text" id="model" placeholder="e.g. claude-sonnet-4-6" maxlength="100" required />
+        </div>
+        <div class="field">
+          <label for="content">Prompt Content</label>
+          <textarea id="content" rows="5" placeholder="Enter your prompt here..." required></textarea>
+        </div>
+        <div class="field field--inline">
+          <label class="field--inline-label">
+            <input type="checkbox" id="is-code" />
+            Content is code
+          </label>
+        </div>
+        <button type="submit">Save Prompt</button>
+      </form>
+    </section>
+
+    <section class="library-section">
+      <div class="library-header">
+        <h2>Saved Prompts</h2>
+        <div class="library-actions">
+          <button id="export-btn" class="btn-ghost">&#8593; Export</button>
+          <label class="btn-ghost btn-import-label" for="import-file-input">&#8595; Import</label>
+          <input type="file" id="import-file-input" accept=".json" style="display:none;" />
+        </div>
+      </div>
+      <p id="import-error" class="import-error" style="display:none;"></p>
+      <div id="prompt-list" class="prompt-grid"></div>
+      <p id="empty-state" class="empty-state">No prompts saved yet. Add one above.</p>
+    </section>
+  </div>
+
+  <!-- Import conflict resolution modal -->
+  <div id="import-modal" class="modal-overlay" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="import-modal-title">
+    <div class="modal">
+      <h3 id="import-modal-title" class="modal-title">Import Prompts</h3>
+      <p id="import-modal-info" class="modal-info"></p>
+      <div class="import-options" id="import-options">
+        <label class="import-option">
+          <input type="radio" name="import-mode" value="merge-skip" checked />
+          <span>
+            <strong>Merge — add new, skip duplicates</strong>
+            Keep all existing prompts and add only prompts with new IDs.
+          </span>
+        </label>
+        <label class="import-option">
+          <input type="radio" name="import-mode" value="merge-overwrite" />
+          <span>
+            <strong>Merge — add new, overwrite duplicates</strong>
+            Keep existing unique prompts and replace duplicates with the imported versions.
+          </span>
+        </label>
+        <label class="import-option">
+          <input type="radio" name="import-mode" value="replace" />
+          <span>
+            <strong>Replace — clear library and import all</strong>
+            Delete all existing prompts and replace with the imported data.
+          </span>
+        </label>
+      </div>
+      <div class="modal-actions">
+        <button id="import-confirm-btn" class="btn-accent">Import</button>
+        <button id="import-cancel-btn" class="btn-ghost">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
