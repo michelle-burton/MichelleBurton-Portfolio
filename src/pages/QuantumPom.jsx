@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function QuantumPomThanks() {
+export default function QuantumPom() {
   return (
     <main style={styles.page}>
       <div style={styles.card}>
@@ -22,12 +22,26 @@ export default function QuantumPomThanks() {
         </div>
 
         <footer style={styles.footer}>
-          <p style={styles.note}>
-            Thank you for your time and for taking a look at this experiment.
-          </p>
-          <p style={styles.small}>
+        <p style={styles.note}>
+            Quantum Pom is a glimpse into the evolving world of AI-driven design—where
+            motion, emotion, and code come together. Each piece is an experiment in
+            building living visuals powered by generative systems.
+        </p>
+
+        <p style={styles.buttonWrap}>
+            <a
+            href="https://www.youtube.com/@QuantumAIDesign"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={styles.quantumButton}
+            >
+            Continue the Journey →
+            </a>
+        </p>
+
+        <p style={styles.small}>
             Michelle Burton • Quantum AI Design
-          </p>
+        </p>
         </footer>
       </div>
     </main>
@@ -84,17 +98,49 @@ const styles = {
     height: "auto",
     display: "block",
   },
-  footer: {
-    padding: "14px 8px 6px",
+
+   footer: {
+    marginTop: "1.5rem",
+    padding: "1.5rem 1rem 1rem",
+    textAlign: "center",
+    background: "rgba(255, 255, 255, 0.06)",
+    borderTop: "1px solid rgba(255, 255, 255, 0.12)",
   },
+
   note: {
-    margin: "0 0 6px",
-    opacity: 0.9,
-    lineHeight: 1.5,
+    margin: "0 auto",
+    maxWidth: "700px",
+    fontSize: "1rem",
+    lineHeight: 1.7,
+    color: "rgba(237, 233, 254, 0.92)",
   },
-  small: {
-    margin: 0,
+
+  buttonWrap: {
+    margin: "1.25rem 0 0.75rem",
+  },
+
+  quantumButton: {
+    display: "inline-block",
+    padding: "0.8rem 1.5rem",
+    borderRadius: "999px",
+    textDecoration: "none",
+    color: "#F8FAFC",
+    fontSize: "0.95rem",
+    fontWeight: 500,
+    letterSpacing: "0.02em",
+    background: "rgba(255, 255, 255, 0.08)",
+    border: "1px solid rgba(255, 255, 255, 0.22)",
+    backdropFilter: "blur(10px)",
+    WebkitBackdropFilter: "blur(10px)",
+    boxShadow:
+      "0 0 10px rgba(0, 207, 255, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.08)",
+    transition: "all 0.3s ease",
+  },
+    small: {
     opacity: 0.65,
-    fontSize: "13px",
+    marginTop: "0.75rem",
+    fontSize: "0.9rem",
+    color: "rgba(237, 233, 254, 0.7)",
   },
+  
 };
