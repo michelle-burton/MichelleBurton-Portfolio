@@ -7,7 +7,7 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Projects from "./pages/Projects.jsx";
 import GraphicProjects from "./pages/GraphicProjects.jsx";
-import QuantumPomThanks from "./pages/QuantumPomThanks";
+import QuantumPom from "./pages/QuantumPom.jsx";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -34,7 +34,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/grahic-projects" element={<Projects />} />
-        <Route path="/aj-thanks-quantum" element={<QuantumPomThanks />} />
+        <Route path="/quantum-pom" element={<QuantumPom />} />
       </Routes>
       <Footer />
     </Router>
