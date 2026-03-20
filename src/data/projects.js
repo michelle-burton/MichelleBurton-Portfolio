@@ -167,5 +167,23 @@ export const projects = [
     liveUrl:'/quantum-pom',
     repoUrl: 'https://www.youtube.com/@QuantumAIDesign',
     },
+    {
+    id: "Case Study",
+    title: "From Prompt to Print — AI Birthday Card Design",
+    type: "design",
+    description: "A step-by-step exploration of an AI-assisted design workflow, from early concepts to final delivery. Showcasing how generative tools can support creative direction, iteration, and personalized visual storytelling.",
+    thumbnail: "/images/Thumb_20.png",
+    liveUrl:'/case-study/index.html',
+    //repoUrl: '/case-study/index.html',
+    },
+    {
+    id: "Prompt Library",
+    title: "Prompt Library",
+    type: "Code",
+    description: "A step-by-step exploration of an AI-assisted design workflow, from early concepts to final delivery. Showcasing how generative tools can support creative direction, iteration, and personalized visual storytelling.",
+    thumbnail: "/images/Thumb_20.png",
+    liveUrl:'/prompt-library/index.html',
+    //repoUrl: '/case-study/index.html',
+    },
 
 ];
