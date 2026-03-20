@@ -158,5 +158,14 @@ export const projects = [
     liveUrl:'https://www.michelle-burton.com/code-task-list/',
     repoUrl: 'https://github.com/michelle-burton/quick-tasks-dashboard',
     },
+    {
+    id: "Quantum Pom",
+    title: "AI Quantum Pom",
+    type: "design",
+    description: "An AI-assisted video project exploring generative visuals, motion design, and front-end presentation. Focused on blending creative direction with emerging AI workflows.",
+    thumbnail: "/images/Thumb_19.png",
+    liveUrl:'/quantum-pom',
+    repoUrl: 'https://www.youtube.com/@QuantumAIDesign',
+    },
 
 ];

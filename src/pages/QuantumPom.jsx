@@ -1,6 +1,10 @@
 import React from "react";
+import { useState } from "react";
+
 
 export default function QuantumPom() {
+    const [isHovered, setIsHovered] = useState(false);
+    
   return (
     <main style={styles.page}>
       <div style={styles.card}>
@@ -33,8 +37,13 @@ export default function QuantumPom() {
             href="https://www.youtube.com/@QuantumAIDesign"
             target="_blank"
             rel="noopener noreferrer"
-            style={styles.quantumButton}
-            >
+            style={{
+            ...styles.quantumButton,
+            ...(isHovered ? styles.quantumButtonHover : {}),
+        }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        >
             Continue the Journey →
             </a>
         </p>
@@ -135,7 +144,13 @@ const styles = {
     boxShadow:
       "0 0 10px rgba(0, 207, 255, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.08)",
     transition: "all 0.3s ease",
-  },
+    },
+  quantumButtonHover: {
+        transform: "translateY(-2px)",
+        boxShadow:
+            "0 0 16px rgba(0, 207, 255, 0.35), 0 0 28px rgba(168, 85, 247, 0.22)",
+        background: "rgba(255, 255, 255, 0.12)",
+    },
     small: {
     opacity: 0.65,
     marginTop: "0.75rem",
