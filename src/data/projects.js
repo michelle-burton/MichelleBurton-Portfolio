@@ -178,12 +178,12 @@ export const projects = [
     },
     {
     id: "Prompt Library",
-    title: "Prompt Library",
+    title: "Prompt Library — AI Workflow Toolkit",
     type: "Code",
-    description: "A step-by-step exploration of an AI-assisted design workflow, from early concepts to final delivery. Showcasing how generative tools can support creative direction, iteration, and personalized visual storytelling.",
-    thumbnail: "/images/Thumb_20.png",
+    description: "A reusable prompt system designed to support AI-driven workflows—from design generation to development and analysis. Built to standardize prompting, improve outputs, and accelerate creative and technical iteration.",
+    thumbnail: "/images/Thumb_21.png",
     liveUrl:'/prompt-library/index.html',
-    //repoUrl: '/case-study/index.html',
+    repoUrl: 'https://github.com/michelle-burton/prompt-library',
     },
 
 ];
