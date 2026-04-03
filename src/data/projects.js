@@ -192,7 +192,7 @@ export const projects = [
     description: "A reusable prompt system designed to support AI-driven workflows—from design generation to development and analysis. Built to standardize prompting, improve outputs, and accelerate creative and technical iteration.",
     thumbnail: "/images/Thumb_21.png",
     liveUrl:'https://inspiration-capture.onrender.com/',
-    repoUrl: 'https://github.com/michelle-burton/prompt-library',
+    repoUrl: 'https://github.com/michelle-burton/Inspiration-Capture',
     },
 
 ];
