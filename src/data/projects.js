@@ -185,5 +185,14 @@ export const projects = [
     liveUrl:'/prompt-library/index.html',
     repoUrl: 'https://github.com/michelle-burton/prompt-library',
     },
+        {
+    id: "Inspiration Capture",
+    title: "Prompt Library — AI Workflow Toolkit",
+    type: "Code",
+    description: "A reusable prompt system designed to support AI-driven workflows—from design generation to development and analysis. Built to standardize prompting, improve outputs, and accelerate creative and technical iteration.",
+    thumbnail: "/images/Thumb_21.png",
+    liveUrl:'/prompt-library/index.html',
+    repoUrl: 'https://github.com/michelle-burton/prompt-library',
+    },
 
 ];
